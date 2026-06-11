@@ -141,13 +141,13 @@ function About({ navigateToHomeAndScroll }) {
 
       <section className="py-20 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
         <div className="max-w-7xl mx-auto px-6 md:px-[64px]">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
             {/* Left Column: Interactive Visual Panel */}
-            <div className="lg:col-span-6 order-2 lg:order-1 relative">
+            <div className="lg:col-span-6 order-2 lg:order-1 relative flex flex-col h-full">
               {/* Background Red Neon Blur Radial Glow */}
               <div className="absolute inset-0 bg-secondary/15 filter blur-[100px] rounded-full -z-10 animate-pulse duration-[8000ms]"></div>
               
-              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-4 overflow-hidden h-[500px] shadow-2xl flex flex-col justify-between">
+              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-4 overflow-hidden w-full h-full min-h-[480px] shadow-2xl flex flex-col justify-between">
                 <div className="relative w-full h-full rounded-card overflow-hidden">
                   {/* Image 1: Precision */}
                   <img
@@ -252,7 +252,7 @@ function About({ navigateToHomeAndScroll }) {
                   <div className="h-1 w-16 bg-secondary"></div>
                   <span className="font-bold tracking-[0.3em] text-secondary text-[10px] uppercase font-label-caps">OUR COMMITMENT</span>
                 </div>
-                <h2 className="text-5xl font-extrabold italic tracking-tight leading-none uppercase text-white font-sans">
+                <h2 className="text-[2rem] font-extrabold italic tracking-tight leading-tight uppercase text-white font-sans">
                   Freight done smarter, <br />
                   <span className="text-secondary">faster, and transparently.</span>
                 </h2>
