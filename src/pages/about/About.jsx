@@ -139,7 +139,7 @@ function About({ navigateToHomeAndScroll }) {
       </section>
 
 
-      <section className="py-12 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
+      <section className="py-16 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
         <div className="max-w-7xl mx-auto px-6 md:px-[64px]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
             {/* Left Column: Interactive Visual Panel */}
@@ -147,7 +147,7 @@ function About({ navigateToHomeAndScroll }) {
               {/* Background Red Neon Blur Radial Glow */}
               <div className="absolute inset-0 bg-secondary/15 filter blur-[100px] rounded-full -z-10 animate-pulse duration-[8000ms]"></div>
               
-              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-3 overflow-hidden w-full h-full min-h-[400px] shadow-2xl flex flex-col justify-between">
+              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-4 overflow-hidden w-full h-full min-h-[440px] shadow-2xl flex flex-col justify-between">
                 <div className="relative w-full h-full rounded-card overflow-hidden">
                   {/* Image 1: Precision */}
                   <img
@@ -246,7 +246,7 @@ function About({ navigateToHomeAndScroll }) {
             </div>
 
             {/* Right Column: Text & Content */}
-            <div className="lg:col-span-6 order-1 lg:order-2 space-y-5">
+            <div className="lg:col-span-6 order-1 lg:order-2 space-y-6">
               <div>
                 <div className="flex items-center gap-4 mb-3">
                   <div className="h-1 w-12 bg-secondary"></div>
@@ -258,12 +258,12 @@ function About({ navigateToHomeAndScroll }) {
                 </h2>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {/* Card 1 */}
                 <button
                   onMouseEnter={() => setActiveTab(0)}
                   onClick={() => setActiveTab(0)}
-                  className={`w-full text-left py-3.5 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-5 items-start ${
+                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
                     activeTab === 0
                       ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                       : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
@@ -287,7 +287,7 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(1)}
                   onClick={() => setActiveTab(1)}
-                  className={`w-full text-left py-3.5 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-5 items-start ${
+                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
                     activeTab === 1
                       ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                       : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
@@ -311,7 +311,7 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(2)}
                   onClick={() => setActiveTab(2)}
-                  className={`w-full text-left py-3.5 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-5 items-start ${
+                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
                     activeTab === 2
                       ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                       : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
@@ -332,10 +332,10 @@ function About({ navigateToHomeAndScroll }) {
                 </button>
               </div>
 
-              <div className="pt-2">
+              <div className="pt-3">
                 <button
                   onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-black px-8 py-3 font-black text-base italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button"
+                  className="bg-white text-black px-8 py-3.5 font-black text-base italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button"
                 >
                   Get started today
                   <span className="material-symbols-outlined font-black">arrow_forward</span>
