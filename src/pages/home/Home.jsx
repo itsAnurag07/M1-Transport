@@ -269,7 +269,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* Testimonial Section */}
-      <section className="px-6 w-full max-w-7xl mx-auto bg-surface-container-lowest editorial-shadow rounded-card opacity-100 translate-y-0">
+      <section className="my-20 px-6 w-full max-w-7xl mx-auto bg-surface-container-lowest editorial-shadow rounded-card opacity-100 translate-y-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-12 py-[70px]">
           <div>
             <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-12">
