@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FEFEFE;
+    color: #303742;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.editorial-shadow {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+}
+
+.hero-title {
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px #E11919;
+  color: transparent;
+}
+
+.cta-gradient {
+  background: linear-gradient(135deg, #961F1A 0%, #BD1C19 40%, #E11919 100%);
+}
+
+.text-3xl {
+  font-size: 1.50rem;
+  line-height: 0.10rem;
+}
+
+.py-4 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Radical About Us Helpers */
+.text-outline-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+.skew-box {
+  transform: skewY(-3deg);
+}
+.skew-content {
+  transform: skewY(3deg);
+}
+.overlap-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.kinetic-bg {
+  background: linear-gradient(135deg, #e11919 0%, #303742 100%);
+}
+.giant-stat {
+  font-size: clamp(8rem, 15vw, 24rem);
+  line-height: 0.8;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+.masked-image {
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+/* Australia Network Map Section Sleek Overrides */
+#states-group path {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  fill: #242429 !important;
+  stroke: rgba(255, 255, 255, 0.22) !important;
+  cursor: pointer;
+}
+#states-group path:hover {
+  fill: rgba(225, 25, 25, 0.08) !important;
+  stroke: rgba(225, 25, 25, 0.5) !important;
+}
