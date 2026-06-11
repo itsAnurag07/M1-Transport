@@ -139,7 +139,7 @@ function About({ navigateToHomeAndScroll }) {
       </section>
 
 
-      <section className="py-20 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
+      <section className="py-12 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
         <div className="max-w-7xl mx-auto px-6 md:px-[64px]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
             {/* Left Column: Interactive Visual Panel */}
@@ -147,7 +147,7 @@ function About({ navigateToHomeAndScroll }) {
               {/* Background Red Neon Blur Radial Glow */}
               <div className="absolute inset-0 bg-secondary/15 filter blur-[100px] rounded-full -z-10 animate-pulse duration-[8000ms]"></div>
               
-              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-4 overflow-hidden w-full h-full min-h-[480px] shadow-2xl flex flex-col justify-between">
+              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-3 overflow-hidden w-full h-full min-h-[400px] shadow-2xl flex flex-col justify-between">
                 <div className="relative w-full h-full rounded-card overflow-hidden">
                   {/* Image 1: Precision */}
                   <img
@@ -179,63 +179,63 @@ function About({ navigateToHomeAndScroll }) {
                   <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
 
                   {/* Tech HUD overlay */}
-                  <div className="absolute inset-x-6 bottom-6 bg-black/65 backdrop-blur-md border border-white/10 rounded-xl p-5 text-white z-10 shadow-[0_4px_30px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-secondary/35">
-                    <div className="flex justify-between items-center border-b border-white/10 pb-3 mb-3">
+                  <div className="absolute inset-x-4 bottom-4 bg-black/65 backdrop-blur-md border border-white/10 rounded-xl p-4 text-white z-10 shadow-[0_4px_30px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-secondary/35">
+                    <div className="flex justify-between items-center border-b border-white/10 pb-2 mb-2">
                       <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
-                        <span className="font-label-caps uppercase tracking-wider text-[10px] font-bold text-white/90">
+                        <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+                        <span className="font-label-caps uppercase tracking-wider text-[9px] font-bold text-white/90">
                           {activeTab === 0 ? "SYSTEM: CONSOLIDATION ENGINE" : activeTab === 1 ? "SYSTEM: TELEMETRY ENGINE" : "SYSTEM: DISPATCH SYSTEM"}
                         </span>
                       </div>
-                      <span className="font-label-caps bg-secondary/10 text-secondary border border-secondary/25 text-[9px] px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">
+                      <span className="font-label-caps bg-secondary/10 text-secondary border border-secondary/25 text-[8px] px-1.5 py-0.5 rounded-full font-bold uppercase tracking-widest">
                         {activeTab === 0 ? "ROUTING: OPTIMIZED" : activeTab === 1 ? "GPS: ONLINE" : "NETWORK: OPTIMAL"}
                       </span>
                     </div>
                     
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-3 gap-3">
                       {activeTab === 0 ? (
                         <>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">CUBE UTILIZATION</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">96.4%</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">CUBE UTILIZATION</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">96.4%</div>
                           </div>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">EMPTY MILES SAVED</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">1,420 KM</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">EMPTY MILES SAVED</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">1,420 KM</div>
                           </div>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">ROUTING LATENCY</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">&lt; 120MS</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">ROUTING LATENCY</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">&lt; 120MS</div>
                           </div>
                         </>
                       ) : activeTab === 1 ? (
                         <>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">SATELLITE SYNC</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">100% (GPS)</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">SATELLITE SYNC</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">100% (GPS)</div>
                           </div>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">TEMP STABILITY</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">4.2°C (STABLE)</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">TEMP STABILITY</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">4.2°C (STABLE)</div>
                           </div>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">UPDATE FEED</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">REAL-TIME</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">UPDATE FEED</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">REAL-TIME</div>
                           </div>
                         </>
                       ) : (
                         <>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">ACTIVE DEPOTS</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">5 / 5 NATIONAL</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">ACTIVE DEPOTS</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">5 / 5 NATIONAL</div>
                           </div>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">DRIVER STATUS</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">VERIFIED</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">DRIVER STATUS</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">VERIFIED</div>
                           </div>
                           <div>
-                            <div className="text-[9px] text-white/40 font-bold uppercase tracking-widest mb-1 font-label-caps">ON-TIME SLA</div>
-                            <div className="text-sm font-extrabold italic tracking-tight text-white font-sans">99.8%</div>
+                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">ON-TIME SLA</div>
+                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">99.8%</div>
                           </div>
                         </>
                       )}
@@ -246,10 +246,10 @@ function About({ navigateToHomeAndScroll }) {
             </div>
 
             {/* Right Column: Text & Content */}
-            <div className="lg:col-span-6 order-1 lg:order-2 space-y-8">
+            <div className="lg:col-span-6 order-1 lg:order-2 space-y-5">
               <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="h-1 w-16 bg-secondary"></div>
+                <div className="flex items-center gap-4 mb-3">
+                  <div className="h-1 w-12 bg-secondary"></div>
                   <span className="font-bold tracking-[0.3em] text-secondary text-[10px] uppercase font-label-caps">OUR COMMITMENT</span>
                 </div>
                 <h2 className="text-[2rem] font-extrabold italic tracking-tight leading-tight uppercase text-white font-sans">
@@ -258,12 +258,12 @@ function About({ navigateToHomeAndScroll }) {
                 </h2>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {/* Card 1 */}
                 <button
                   onMouseEnter={() => setActiveTab(0)}
                   onClick={() => setActiveTab(0)}
-                  className={`w-full text-left p-6 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
+                  className={`w-full text-left py-3.5 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-5 items-start ${
                     activeTab === 0
                       ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                       : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
@@ -274,10 +274,10 @@ function About({ navigateToHomeAndScroll }) {
                   )}
                   <span className={`font-black text-xl italic mt-0.5 transition-colors duration-300 ${activeTab === 0 ? 'text-secondary' : 'text-white/60'}`}>/01</span>
                   <div>
-                    <h3 className={`font-black text-xl uppercase italic mb-2 tracking-tight transition-colors duration-300 ${activeTab === 0 ? 'text-white' : 'text-white/70'}`}>
+                    <h3 className={`font-black text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 0 ? 'text-white' : 'text-white/70'}`}>
                       Precision in every move
                     </h3>
-                    <p className={`text-sm leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 0 ? 'text-white/80' : 'text-white/50'}`}>
+                    <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 0 ? 'text-white/80' : 'text-white/50'}`}>
                       Optimized consolidation and routing for faster, more efficient freight movement across the continent.
                     </p>
                   </div>
@@ -287,7 +287,7 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(1)}
                   onClick={() => setActiveTab(1)}
-                  className={`w-full text-left p-6 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
+                  className={`w-full text-left py-3.5 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-5 items-start ${
                     activeTab === 1
                       ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                       : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
@@ -298,10 +298,10 @@ function About({ navigateToHomeAndScroll }) {
                   )}
                   <span className={`font-black text-xl italic mt-0.5 transition-colors duration-300 ${activeTab === 1 ? 'text-secondary' : 'text-white/60'}`}>/02</span>
                   <div>
-                    <h3 className={`font-black text-xl uppercase italic mb-2 tracking-tight transition-colors duration-300 ${activeTab === 1 ? 'text-white' : 'text-white/70'}`}>
+                    <h3 className={`font-black text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 1 ? 'text-white' : 'text-white/70'}`}>
                       Transparency at every step
                     </h3>
-                    <p className={`text-sm leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 1 ? 'text-white/80' : 'text-white/50'}`}>
+                    <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 1 ? 'text-white/80' : 'text-white/50'}`}>
                       Real-time communication, appointment handling, and operational clarity through our digital tracking suite.
                     </p>
                   </div>
@@ -311,7 +311,7 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(2)}
                   onClick={() => setActiveTab(2)}
-                  className={`w-full text-left p-6 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
+                  className={`w-full text-left py-3.5 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-5 items-start ${
                     activeTab === 2
                       ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                       : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
@@ -322,20 +322,20 @@ function About({ navigateToHomeAndScroll }) {
                   )}
                   <span className={`font-black text-xl italic mt-0.5 transition-colors duration-300 ${activeTab === 2 ? 'text-secondary' : 'text-white/60'}`}>/03</span>
                   <div>
-                    <h3 className={`font-black text-xl uppercase italic mb-2 tracking-tight transition-colors duration-300 ${activeTab === 2 ? 'text-white' : 'text-white/70'}`}>
+                    <h3 className={`font-black text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 2 ? 'text-white' : 'text-white/70'}`}>
                       Reliability you can count on
                     </h3>
-                    <p className={`text-sm leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 2 ? 'text-white/80' : 'text-white/50'}`}>
+                    <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 2 ? 'text-white/80' : 'text-white/50'}`}>
                       A multi-terminal network and experienced teams delivering consistently high performance every day.
                     </p>
                   </div>
                 </button>
               </div>
 
-              <div className="pt-4">
+              <div className="pt-2">
                 <button
                   onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-black px-10 py-4 font-black text-lg italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button"
+                  className="bg-white text-black px-8 py-3 font-black text-base italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button"
                 >
                   Get started today
                   <span className="material-symbols-outlined font-black">arrow_forward</span>
