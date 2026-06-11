@@ -84,7 +84,7 @@ function About({ navigateToHomeAndScroll }) {
       </section>
 
       {/* Our Mission & Core Values Section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-values">
+      <section className="py-24 px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-values">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 items-center">
           <div className="lg:col-span-7">
             <span className="block font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4">
@@ -139,7 +139,7 @@ function About({ navigateToHomeAndScroll }) {
       </section>
 
 
-      <section className="py-16 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
+      <section className="py-24 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
         <div className="max-w-7xl mx-auto px-6 md:px-[64px]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
             {/* Left Column: Interactive Visual Panel */}
@@ -348,7 +348,7 @@ function About({ navigateToHomeAndScroll }) {
 
 
       {/* Section: Why Choose Us (Stats) */}
-      <section className="py-20 px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-stats">
+      <section className="py-24 px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-stats">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left Column (Content) */}
           <div className="lg:col-span-6 space-y-6">
@@ -400,7 +400,7 @@ function About({ navigateToHomeAndScroll }) {
 
 
       {/* Section 6: Partner - YOLO Variant */}
-      <section className="py-16 opacity-100 translate-y-0" id="about-yolo-cta">
+      <section className="py-24 opacity-100 translate-y-0" id="about-yolo-cta">
         <div className="max-w-7xl mx-auto px-6 md:px-[64px]">
           <div className="kinetic-bg relative overflow-hidden p-8 lg:p-16 group rounded-card">
             {/* Background Pattern */}
