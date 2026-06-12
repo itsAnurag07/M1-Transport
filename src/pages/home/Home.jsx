@@ -257,9 +257,9 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
           </div>
           <div className="border-l border-outline-variant pl-8 text-left">
             <div className="font-display-xl text-display-lg md:text-display-xl mb-2 text-primary">
-              <Counter end={800} suffix="+" />
+              <Counter end={100} suffix="+" />
             </div>
-            <div className="font-label-caps text-on-surface-variant uppercase tracking-widest font-bold">Cities Served</div>
+            <div className="font-label-caps text-on-surface-variant uppercase tracking-widest font-bold">Business Clients</div>
           </div>
           <div className="border-l border-outline-variant pl-8 text-left">
             <div className="font-display-xl text-display-lg md:text-display-xl mb-2 text-primary">

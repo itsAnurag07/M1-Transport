@@ -146,34 +146,31 @@ function About({ navigateToHomeAndScroll }) {
             <div className="lg:col-span-6 order-2 lg:order-1 relative flex flex-col h-full">
               {/* Background Red Neon Blur Radial Glow */}
               <div className="absolute inset-0 bg-secondary/15 filter blur-[100px] rounded-full -z-10 animate-pulse duration-[8000ms]"></div>
-              
+
               <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-4 overflow-hidden w-full h-full min-h-[440px] shadow-2xl flex flex-col justify-between">
                 <div className="relative w-full h-full rounded-card overflow-hidden">
                   {/* Image 1: Precision */}
                   <img
                     alt="Precision in every move"
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
-                      activeTab === 0 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
-                    }`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 0 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
+                      }`}
                     src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800"
                   />
                   {/* Image 2: Transparency */}
                   <img
                     alt="Transparency at every step"
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
-                      activeTab === 1 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
-                    }`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 1 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
+                      }`}
                     src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
                   />
                   {/* Image 3: Reliability */}
                   <img
                     alt="Reliability you can count on"
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
-                      activeTab === 2 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
-                    }`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 2 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
+                      }`}
                     src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800"
                   />
-                  
+
                   {/* Premium Dark Vignette Overlays */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent"></div>
                   <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
@@ -191,7 +188,7 @@ function About({ navigateToHomeAndScroll }) {
                         {activeTab === 0 ? "ROUTING: OPTIMIZED" : activeTab === 1 ? "GPS: ONLINE" : "NETWORK: OPTIMAL"}
                       </span>
                     </div>
-                    
+
                     <div className="grid grid-cols-3 gap-3">
                       {activeTab === 0 ? (
                         <>
@@ -263,11 +260,10 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(0)}
                   onClick={() => setActiveTab(0)}
-                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
-                    activeTab === 0
-                      ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
-                      : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
-                  }`}
+                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${activeTab === 0
+                    ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
+                    : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
+                    }`}
                 >
                   {activeTab === 0 && (
                     <div className="absolute top-0 bottom-0 left-0 w-1 bg-secondary shadow-[0_0_12px_#e11919] rounded-full"></div>
@@ -287,11 +283,10 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(1)}
                   onClick={() => setActiveTab(1)}
-                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
-                    activeTab === 1
-                      ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
-                      : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
-                  }`}
+                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${activeTab === 1
+                    ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
+                    : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
+                    }`}
                 >
                   {activeTab === 1 && (
                     <div className="absolute top-0 bottom-0 left-0 w-1 bg-secondary shadow-[0_0_12px_#e11919] rounded-full"></div>
@@ -311,11 +306,10 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(2)}
                   onClick={() => setActiveTab(2)}
-                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${
-                    activeTab === 2
-                      ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
-                      : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
-                  }`}
+                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${activeTab === 2
+                    ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
+                    : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
+                    }`}
                 >
                   {activeTab === 2 && (
                     <div className="absolute top-0 bottom-0 left-0 w-1 bg-secondary shadow-[0_0_12px_#e11919] rounded-full"></div>
@@ -378,9 +372,10 @@ function About({ navigateToHomeAndScroll }) {
             </div>
             <div>
               <div className="text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
-                <Counter end={800} suffix="+" />
+                <Counter end={100} suffix="+" />
               </div>
-              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">Cities Served Across Regions</div>
+              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">
+                Business Clients</div>
             </div>
             <div>
               <div className="text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
