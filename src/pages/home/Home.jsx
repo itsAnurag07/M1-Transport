@@ -54,6 +54,8 @@ function Counter({ end, duration = 2000, decimals = 0, suffix = '', prefix = '' 
 import slide1 from '../../assets/images/hero-slide-1.png';
 import slide2 from '../../assets/images/hero-slide-2.png';
 import slide3 from '../../assets/images/hero-slide-3.png';
+import truck2 from '../../assets/images/truck-1.png';
+import girlImage from '../../assets/images/girl.png';
 import heroVideo from '../../assets/Truck_Hero.mp4';
 
 function Home({ navigateTo, navigateToHomeAndScroll }) {
@@ -294,7 +296,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             </div>
           </div>
           <div className="relative h-[600px] rounded-xl overflow-hidden shadow-2xl">
-            <img alt="Supply Chain Professional" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCickXYiv8BOnqUvTSfkJTB9JB7PwHzFQ2ANyNhP7auUjDj3AtbUmGbxRKvXbPK_FAW2y2cO4fi_lwWp2m5XGUev-1OMlzz5hTLP0YeSnDenitxUsGa1DgU-p0queb7jGpIwJwR-6PrBADfxeX7bFKUrz2S9oV7DaknpJbQitsj3eeyaNkAMs2bUn7s7meXXtX53sPYu0hsEeiSFMtjJwHW9M7E2BpFML_NfpQjTyZPzPjBE-5vQDTtYo9BaGtY0w-BVz8MOMr3tyA" />
+            <img alt="Supply Chain Professional" className="w-full h-full object-cover" src={girlImage} />
           </div>
         </div>
       </section>
@@ -343,7 +345,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
           </div>
           <div className="md:w-1/2 flex items-center justify-center relative min-h-[400px] bg-black">
             <div className="text-white font-display-xl text-[180px] font-bold tracking-tighter opacity-10 absolute select-none">M1</div>
-            <img alt="Premium Transport" className="w-4/5 h-4/5 object-cover editorial-shadow relative z-10 border-[16px] border-white rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBANaKgHTzuyH_pshLXUdTkXTLbdCQDjL5kbkZKjsMGFd-3j54LYcRMeiO-alKz-wkvm1nZ9DmGQxUkKjIfNifR3KUIjAZdmMktruITGJkDirDCqhLN1K8cI-5nIkUYMSeUnw9WFSJJcpTj_OQdrcV-K11XANAgLJ-yn8vuisnQb3zWsTXfpBoF7id6UxTM6tKanR_mgs9ftL2US9oWhQnGIDB8gTEuaZ3ERih3zSNu1a1YghNy_LTXeb0_UoArflcrRIUe6HlKsHA" />
+            <img alt="Premium Transport" className="w-4/5 h-4/5 object-cover editorial-shadow relative z-10 border-[16px] border-white rounded-lg" src={truck2} />
           </div>
         </div>
       </section>
