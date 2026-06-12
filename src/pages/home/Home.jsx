@@ -239,7 +239,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* Stats Grid */}
-      <section className="py-[100px] px-6 w-full max-w-7xl mx-auto opacity-100 translate-y-0">
+      <section className="pt-[100px] pb-[50px] px-6 w-full max-w-7xl mx-auto opacity-100 translate-y-0">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-grid-gutter text-center">
           <div className="border-l border-outline-variant pl-8 text-left">
             <div className="font-display-xl text-display-lg md:text-display-xl mb-2 text-primary">
