@@ -175,7 +175,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* About / Fleet Section */}
-      <section id="fleet" className="py-section-padding px-6 w-full max-w-7xl mx-auto opacity-100 translate-y-0">
+      <section id="fleet" className="py-[100px] px-6 w-full max-w-7xl mx-auto opacity-100 translate-y-0">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-center">
           <div className="md:col-span-5">
             <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-8">
@@ -207,7 +207,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* Services List Section */}
-      <section className="py-section-padding px-6 bg-surface-container-low opacity-100 translate-y-0">
+      <section className="py-[100px] px-6 bg-surface-container-low opacity-100 translate-y-0">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-baseline border-b border-outline/30 pb-12 mb-12">
             <h2 className="font-display-lg text-display-lg text-primary">Services.</h2>
@@ -239,7 +239,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* Stats Grid */}
-      <section className="py-section-padding px-6 w-full max-w-7xl mx-auto opacity-100 translate-y-0">
+      <section className="py-[100px] px-6 w-full max-w-7xl mx-auto opacity-100 translate-y-0">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-grid-gutter text-center">
           <div className="border-l border-outline-variant pl-8 text-left">
             <div className="font-display-xl text-display-lg md:text-display-xl mb-2 text-primary">
