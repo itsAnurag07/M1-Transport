@@ -57,6 +57,8 @@ import slide3 from '../../assets/images/hero-slide-3.png';
 import truck2 from '../../assets/images/truck-1.png';
 import girlImage from '../../assets/images/girl.png';
 import heroVideo from '../../assets/Truck_Hero.mp4';
+import logo from '../../assets/images/LOGO_NEW.png';
+
 
 function Home({ navigateTo, navigateToHomeAndScroll }) {
   return (
@@ -72,7 +74,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             className="w-full h-full object-cover grayscale-[0.2] contrast-110"
             src={heroVideo}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent"></div>
         </div>
         <div className="relative max-w-7xl mx-auto h-full px-6 flex flex-col justify-center pt-20">
           <div className="max-w-4xl text-white space-y-8">
@@ -131,7 +133,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             {/* Card 1 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
               <img alt="Australian East Coast" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide1} />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/95 via-[#0c1017]/70 to-[#0c1017]/10 transition-opacity duration-500 group-hover:opacity-75"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/75 via-[#0c1017]/50 to-[#0c1017]/5 transition-opacity duration-500 group-hover:opacity-75"></div>
               <div className="relative h-full flex flex-col justify-end p-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>
                   <h3 className="text-2xl font-bold text-white tracking-tight mb-1">Australian East Coast</h3>
@@ -146,7 +148,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             {/* Card 2 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
               <img alt="Bulk Haulage" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide2} />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/95 via-[#0c1017]/70 to-[#0c1017]/10 transition-opacity duration-500 group-hover:opacity-75"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/75 via-[#0c1017]/50 to-[#0c1017]/5 transition-opacity duration-500 group-hover:opacity-75"></div>
               <div className="relative h-full flex flex-col justify-end p-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>
                   <h3 className="text-2xl font-bold text-white tracking-tight mb-1">Bulk Haulage</h3>
@@ -161,7 +163,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             {/* Card 3 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
               <img alt="Third Party Logistics - 3PL" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide3} />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/95 via-[#0c1017]/70 to-[#0c1017]/10 transition-opacity duration-500 group-hover:opacity-75"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/75 via-[#0c1017]/50 to-[#0c1017]/5 transition-opacity duration-500 group-hover:opacity-75"></div>
               <div className="relative h-full flex flex-col justify-end p-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>
                   <h3 className="text-2xl font-bold text-white tracking-tight mb-1">Third Party Logistics - 3PL</h3>
@@ -303,15 +305,22 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
 
       {/* Dark Feature Section (Value Props) */}
       <section className="py-section-padding px-6 text-white overflow-hidden relative opacity-100 translate-y-0 bg-black">
-        <div className="absolute right-[-10%] top-[20%] opacity-10">
-          <h1 className="text-[300px] font-bold tracking-tighter text-outline"><br /></h1>
-        </div>
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="mb-20">
-            <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span> Why M1?
-            </span>
-            <h2 className="font-display-lg text-display-lg max-w-3xl text-[#FEFEFE]">Solving the real problems in freight: cost, speed, and visibility.</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+              <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-8">
+                <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span> Why M1?
+              </span>
+              <h2 className="font-display-lg text-display-lg text-[#FEFEFE]">Solving the real problems in freight: cost, speed, and visibility.</h2>
+            </div>
+            <div className="flex items-center justify-center">
+              <img
+                src={logo}
+                alt="M1 Transport Logo"
+                className="w-64 h-64 md:w-80 md:h-80 object-contain opacity-90"
+                style={{ filter: 'drop-shadow(0 0 40px rgba(220,38,38,0.35)) drop-shadow(0 0 80px rgba(220,38,38,0.15))' }}
+              />
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>

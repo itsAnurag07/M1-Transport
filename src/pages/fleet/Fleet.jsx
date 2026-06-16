@@ -96,7 +96,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
             className="w-full h-full object-cover opacity-60 filter contrast-125 brightness-75"
             src="https://images.unsplash.com/photo-1592838064805-71bd7454a4f1?auto=format&fit=crop&q=80&w=1600"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
         <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
@@ -228,7 +228,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               src={vehicles[activeTab].image}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent"></div>
           </div>
         </div>
       </section>

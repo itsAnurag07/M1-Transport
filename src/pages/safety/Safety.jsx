@@ -105,7 +105,7 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
             className="w-full h-full object-cover opacity-50 filter contrast-125 brightness-75"
             src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&q=80&w=1600"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
         <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
@@ -321,7 +321,7 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?auto=format&fit=crop&q=80&w=800"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
             </div>
           </div>
         </div>

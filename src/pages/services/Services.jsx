@@ -83,7 +83,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
             className="w-full h-full object-cover opacity-60 filter contrast-125 brightness-75"
             src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1600"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
         <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
@@ -150,7 +150,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 src={slide1}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <div className="text-3xl font-bold">East Coast Linehaul</div>
                 <div className="text-sm opacity-80">Daily Corridor Connections</div>
@@ -195,7 +195,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 src={slide2}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <div className="text-3xl font-bold">Bulk Haulage</div>
                 <div className="text-sm opacity-80">Heavy Industrial Cargo Solutions</div>
@@ -240,7 +240,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 src={slide3}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <div className="text-3xl font-bold">3PL Warehousing</div>
                 <div className="text-sm opacity-80">Integrated Inventory &amp; Distribution</div>
