@@ -159,7 +159,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
           {/* Spec Card 3 */}
           <div className="bg-white border border-outline-variant/30 rounded-card p-8 hover:shadow-lg transition-all duration-300">
             <span className="material-symbols-outlined text-4xl text-secondary mb-6">inventory</span>
-            <h3 className="text-xl font-bold text-primary mb-2 uppercase font-sans italic">Dry Van Semis</h3>
+            <h3 className="text-xl font-bold text-primary mb-2 uppercase font-sans italic">Dry Bulk Tankers</h3>
             <p className="text-sm text-on-surface-variant leading-relaxed mb-4">
               Weather-tight, high-cube semi-trailers for general industrial and consumer freight.
             </p>

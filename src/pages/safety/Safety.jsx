@@ -72,10 +72,11 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
       title: 'Vehicle Maintenance',
       description: 'Rigorous preventive maintenance programs with real-time fault reporting. Every vehicle undergoes scheduled inspections exceeding NHVR standards before dispatch.',
     },
+
     {
-      icon: 'local_shipping',
-      title: 'Load Restraint',
-      description: 'All loads secured to NTC Load Restraint Guide standards. Our drivers are certified in advanced load restraint techniques with regular competency assessments.',
+      icon: 'security',
+      title: 'Safety',
+      description: 'Our in-house monitoring system tracks driver safety performance, maintenance records, and fatigue management to support safer and more reliable operations.',
     },
   ];
 
@@ -89,9 +90,9 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
   const safetyFeatures = [
     { icon: 'gps_fixed', title: 'GPS Fleet Tracking', desc: 'Real-time location monitoring with geo-fencing alerts and route compliance verification across every vehicle.' },
     { icon: 'videocam', title: 'Dashcam & Telematics', desc: 'Forward and driver-facing cameras with AI-powered event detection for proactive incident management.' },
-    { icon: 'sensors', title: 'Collision Avoidance', desc: 'Autonomous emergency braking (AEB), lane departure warning, and adaptive cruise control on all prime movers.' },
+    { icon: 'sensors', title: 'Fatigue cameras', desc: 'AI-powered fatigue detection systems help identify driver tiredness and distraction, enabling early intervention to reduce safety risks.' },
     { icon: 'tire_repair', title: 'Tyre Monitoring (TPMS)', desc: 'Real-time tyre pressure and temperature monitoring preventing blowouts and improving fuel efficiency.' },
-    { icon: 'visibility', title: 'Blind Spot Detection', desc: 'Side-scan radar systems alerting drivers to vulnerable road users in adjacent lanes and blind zones.' },
+    { icon: 'visibility', title: '24/7 Human Safety Monitoring', desc: 'Continuous round-the-clock monitoring by trained personnel to identify potential safety concerns and coordinate prompt assistance when required.' },
     { icon: 'thermostat', title: 'EBS & Stability Control', desc: 'Electronic braking systems with roll stability and trailer sway mitigation on all articulated combinations.' },
   ];
 
@@ -141,11 +142,10 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
                 <button
                   key={index}
                   onClick={() => setActivePillar(index)}
-                  className={`w-full text-left p-5 rounded-xl border transition-all duration-300 cursor-pointer flex items-center gap-4 bg-transparent outline-none ${
-                    activePillar === index
-                      ? 'border-secondary/40 bg-secondary/5 shadow-md'
-                      : 'border-outline-variant/20 hover:border-outline-variant/40 hover:bg-slate-50'
-                  }`}
+                  className={`w-full text-left p-5 rounded-xl border transition-all duration-300 cursor-pointer flex items-center gap-4 bg-transparent outline-none ${activePillar === index
+                    ? 'border-secondary/40 bg-secondary/5 shadow-md'
+                    : 'border-outline-variant/20 hover:border-outline-variant/40 hover:bg-slate-50'
+                    }`}
                 >
                   <span className={`material-symbols-outlined text-2xl ${activePillar === index ? 'text-secondary' : 'text-on-surface-variant/50'}`}>
                     {pillar.icon}

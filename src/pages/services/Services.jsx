@@ -133,6 +133,10 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                   <p className="text-xs text-on-surface-variant mt-1">Smarter cube utilization to minimize total freight cost.</p>
                 </div>
               </div>
+              <div className="  border-outline-variant/20">
+                <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider mb-1">Refrigerated Freight</h4>
+                <p className="text-xs text-on-surface-variant leading-relaxed">Specialised in temperature-controlled transport solutions for perishable and sensitive goods.</p>
+              </div>
               <ul className="space-y-2 text-sm text-on-surface-variant list-none pl-0">
                 <li className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
@@ -143,6 +147,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                   Direct linehaul routing with minimal handling
                 </li>
               </ul>
+
             </div>
             <div className="lg:col-span-6 relative h-[450px] rounded-card overflow-hidden shadow-xl group">
               <img
@@ -171,7 +176,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Heavy Capacity</h4>
-                  <p className="text-xs text-on-surface-variant mt-1">High-payload configurations including B-Double combinations.</p>
+                  <p className="text-xs text-on-surface-variant mt-1">High-payload configurations including B-Double combinations and split axle.</p>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Compliance</h4>
@@ -250,143 +255,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
         </div>
       </section>
 
-      {/* Interactive Freight Service Estimator */}
-      <section className="py-20 bg-surface-container-low px-6" id="estimator">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left Info Column */}
-            <div className="lg:col-span-5 space-y-6">
-              <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold">
-                <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                Instant Planning
-              </span>
-              <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
-                Freight Service <br />Estimator
-              </h2>
-              <p className="text-on-surface-variant font-body-md text-base leading-relaxed">
-                Plan your routes instantly. Select your origin and destination hubs to see transit times and specific route capability insights.
-              </p>
-              <div className="p-6 bg-white border border-outline-variant/30 rounded-card shadow-sm space-y-4">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-secondary text-3xl">schedule</span>
-                  <div>
-                    <div className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Estimated Transit</div>
-                    <div className="text-xl font-extrabold text-primary font-sans">{calculateTransitTime()}</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-secondary text-3xl">route</span>
-                  <div>
-                    <div className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Route Insight</div>
-                    <p className="text-sm text-on-surface-variant mt-1 leading-relaxed">{getEstRouteInfo()}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            {/* Right Estimator Widget */}
-            <div className="lg:col-span-7 bg-white p-8 lg:p-12 border border-outline-variant/20 rounded-card shadow-xl">
-              <h3 className="text-2xl font-bold text-primary uppercase italic mb-8 font-sans">Configure Route Specs</h3>
-              <div className="space-y-6">
-                {/* Origins and Destinations */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-xs font-bold text-primary uppercase tracking-wider mb-2">Origin Hub</label>
-                    <select
-                      className="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg py-3 px-4 outline-none font-body-md text-primary focus:border-secondary transition-colors"
-                      value={origin}
-                      onChange={(e) => setOrigin(e.target.value)}
-                    >
-                      {hubs.map((hub) => (
-                        <option key={`origin-${hub}`} value={hub}>{hub} Hub</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold text-primary uppercase tracking-wider mb-2">Destination Hub</label>
-                    <select
-                      className="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg py-3 px-4 outline-none font-body-md text-primary focus:border-secondary transition-colors"
-                      value={destination}
-                      onChange={(e) => setDestination(e.target.value)}
-                    >
-                      {hubs.map((hub) => (
-                        <option key={`dest-${hub}`} value={hub}>{hub} Hub</option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-
-                {/* Service Type Selection */}
-                <div>
-                  <label className="block text-xs font-bold text-primary uppercase tracking-wider mb-3">Service Level</label>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <button
-                      className={`py-4 px-4 rounded-lg font-bold text-sm tracking-wide uppercase border text-center transition-all cursor-pointer ${serviceType === 'linehaul'
-                          ? 'bg-primary border-primary text-white'
-                          : 'bg-surface-container-low border-outline-variant/50 text-primary hover:bg-slate-100'
-                        }`}
-                      onClick={() => setServiceType('linehaul')}
-                    >
-                      East Coast
-                    </button>
-                    <button
-                      className={`py-4 px-4 rounded-lg font-bold text-sm tracking-wide uppercase border text-center transition-all cursor-pointer ${serviceType === 'crossdock'
-                          ? 'bg-primary border-primary text-white'
-                          : 'bg-surface-container-low border-outline-variant/50 text-primary hover:bg-slate-100'
-                        }`}
-                      onClick={() => setServiceType('crossdock')}
-                    >
-                      Bulk Haulage
-                    </button>
-                    <button
-                      className={`py-4 px-4 rounded-lg font-bold text-sm tracking-wide uppercase border text-center transition-all cursor-pointer ${serviceType === '3pl'
-                          ? 'bg-primary border-primary text-white'
-                          : 'bg-surface-container-low border-outline-variant/50 text-primary hover:bg-slate-100'
-                        }`}
-                      onClick={() => setServiceType('3pl')}
-                    >
-                      3PL Logistics
-                    </button>
-                  </div>
-                </div>
-
-                {/* Cargo Weight Range */}
-                <div>
-                  <div className="flex justify-between text-xs font-bold text-primary uppercase tracking-wider mb-2">
-                    <span>Cargo Weight</span>
-                    <span className="text-secondary">{weight.toLocaleString()} kg</span>
-                  </div>
-                  <input
-                    type="range"
-                    min="100"
-                    max="25000"
-                    step="100"
-                    className="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-secondary"
-                    value={weight}
-                    onChange={(e) => setWeight(parseInt(e.target.value))}
-                  />
-                  <div className="flex justify-between text-[10px] text-on-surface-variant font-bold mt-1">
-                    <span>100 KG (LTL Min)</span>
-                    <span>12,000 KG (Semi-load)</span>
-                    <span>25,000 KG (FTL Max)</span>
-                  </div>
-                </div>
-
-                {/* CTA Button inside Calculator */}
-                <div className="pt-4 border-t border-outline-variant/30">
-                  <button
-                    onClick={() => navigateToHomeAndScroll('contact')}
-                    className="w-full bg-secondary hover:bg-[#BD1C19] text-white py-4 px-6 rounded-button font-label-caps uppercase tracking-widest transition-all text-center border-none outline-none cursor-pointer flex items-center justify-center gap-2"
-                  >
-                    Request Estimate Quote
-                    <span className="material-symbols-outlined">arrow_forward</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Australia Network Map Section */}
       <section className="py-24 bg-black text-white relative overflow-hidden" id="services-map">
