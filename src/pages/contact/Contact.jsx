@@ -21,26 +21,12 @@ function Contact({ navigateTo }) {
     setTimeout(() => setSubmitted(false), 4000);
   };
 
-  const offices = [
-    {
-      city: 'Melbourne',
-      address: '45 Industrial Drive, Dandenong South VIC 3175',
-      phone: '(03) 9706 XXXX',
-      email: 'melbourne@m1transport.com.au',
-    },
-    {
-      city: 'Sydney',
-      address: '12 Freight Avenue, Wetherill Park NSW 2164',
-      phone: '(02) 9756 XXXX',
-      email: 'sydney@m1transport.com.au',
-    },
-    {
-      city: 'Brisbane',
-      address: '8 Logistics Court, Acacia Ridge QLD 4110',
-      phone: '(07) 3277 XXXX',
-      email: 'brisbane@m1transport.com.au',
-    },
-  ];
+  const office = {
+    city: 'Melbourne',
+    address: '2 Raymond Rd, Laverton North, 3026 Vic',
+    phone: '0447219626',
+    email: 'info@m1transport.com.au',
+  };
 
   return (
     <>
@@ -145,19 +131,24 @@ function Contact({ navigateTo }) {
 
                 <div>
                   <label className="block text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-2">Service Required</label>
-                  <select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    className="w-full border border-outline-variant/30 rounded-full px-5 py-4 outline-none focus:border-secondary transition-colors font-body-md text-primary bg-white appearance-none cursor-pointer"
-                  >
-                    <option value="">Select a service...</option>
-                    <option value="east-coast">Australian East Coast Linehaul</option>
-                    <option value="bulk">Bulk Haulage</option>
-                    <option value="3pl">Third Party Logistics (3PL)</option>
-                    <option value="refrigerated">Refrigerated Transport</option>
-                    <option value="general">General Enquiry</option>
-                  </select>
+                  <div className="relative">
+                    <select
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      className="w-full border border-outline-variant/30 rounded-full px-5 py-4 outline-none focus:border-secondary transition-colors font-body-md text-primary bg-white appearance-none cursor-pointer pr-12"
+                    >
+                      <option value="">Select a service...</option>
+                      <option value="east-coast">Australian East Coast Linehaul</option>
+                      <option value="bulk">Bulk Haulage</option>
+                      <option value="3pl">Third Party Logistics (3PL)</option>
+                      <option value="refrigerated">Refrigerated Transport</option>
+                      <option value="general">General Enquiry</option>
+                    </select>
+                    <span className="material-symbols-outlined absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-primary">
+                      keyboard_arrow_down
+                    </span>
+                  </div>
                 </div>
 
                 <div>
@@ -201,7 +192,7 @@ function Contact({ navigateTo }) {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase tracking-wide mb-1">National Dispatch</h4>
-                  <p className="text-on-surface-variant text-sm font-body-md">1300 M1 FREIGHT</p>
+                  <p className="text-on-surface-variant text-sm font-body-md">0447 219 626</p>
                   <p className="text-on-surface-variant/60 text-xs font-body-md mt-0.5">Mon–Fri: 6 AM – 10 PM AEST</p>
                 </div>
               </div>
@@ -225,8 +216,8 @@ function Contact({ navigateTo }) {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase tracking-wide mb-1">Head Office</h4>
-                  <p className="text-on-surface-variant text-sm font-body-md">45 Industrial Drive</p>
-                  <p className="text-on-surface-variant/60 text-xs font-body-md mt-0.5">Dandenong South VIC 3175, Australia</p>
+                  <p className="text-on-surface-variant text-sm font-body-md">2 Raymond Rd, Laverton North</p>
+                  <p className="text-on-surface-variant/60 text-xs font-body-md mt-0.5">3026 Vic, Australia</p>
                 </div>
               </div>
             </div>
@@ -261,42 +252,35 @@ function Contact({ navigateTo }) {
       </section>
 
 
-      {/* Depot Locations */}
+      {/* Our Location */}
       <section className="py-20 bg-black text-white overflow-hidden" id="contact-depots">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">● Our Depots</span>
-            <h2 className="text-5xl font-extrabold italic tracking-tight text-white uppercase leading-none font-sans">
-              National Terminal Network
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">● Our Location</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-white uppercase leading-none font-sans">
+              Visit Our Office
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {offices.map((office, index) => (
-              <div
-                key={index}
-                className="group p-8 border border-white/10 rounded-xl hover:border-secondary/30 transition-all duration-300 bg-white/3 hover:bg-white/5"
-              >
-                <div className="flex items-center gap-3 mb-5">
-                  <span className="material-symbols-outlined text-secondary text-2xl">warehouse</span>
-                  <h3 className="text-xl font-extrabold text-white uppercase italic font-sans">{office.city}</h3>
-                </div>
-                <div className="space-y-3 text-sm">
-                  <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-white/30 text-lg mt-0.5">location_on</span>
-                    <span className="text-white/60 font-body-md">{office.address}</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-white/30 text-lg">call</span>
-                    <span className="text-white/60 font-body-md">{office.phone}</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-white/30 text-lg">mail</span>
-                    <span className="text-white/60 font-body-md">{office.email}</span>
-                  </div>
-                </div>
+          <div className="group p-8 sm:p-10 border border-white/10 rounded-xl hover:border-secondary/30 transition-all duration-300 bg-white/[0.03] hover:bg-white/[0.05]">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="material-symbols-outlined text-secondary text-2xl">warehouse</span>
+              <h3 className="text-xl font-extrabold text-white uppercase italic font-sans">{office.city} — Head Office</h3>
+            </div>
+            <div className="space-y-4 text-sm">
+              <div className="flex items-start gap-3">
+                <span className="material-symbols-outlined text-white/30 text-lg mt-0.5">location_on</span>
+                <span className="text-white/60 font-body-md">{office.address}</span>
               </div>
-            ))}
+              <div className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-white/30 text-lg">call</span>
+                <span className="text-white/60 font-body-md">{office.phone}</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-white/30 text-lg">mail</span>
+                <span className="text-white/60 font-body-md">{office.email}</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

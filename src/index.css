@@ -16,7 +16,7 @@
 }
 
 .editorial-shadow {
-  box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
 }
 
 .hero-title {
@@ -34,40 +34,50 @@
   background: linear-gradient(135deg, #961F1A 0%, #BD1C19 40%, #E11919 100%);
 }
 
-.text-3xl {
-  font-size: 1.50rem;
-  line-height: 0.10rem;
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
 
-.py-4 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 
 /* Radical About Us Helpers */
 .text-outline-white {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   color: transparent;
 }
+
 .skew-box {
   transform: skewY(-3deg);
 }
+
 .skew-content {
   transform: skewY(3deg);
 }
+
 .overlap-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .kinetic-bg {
   background: linear-gradient(135deg, #e11919 0%, #303742 100%);
 }
+
 .giant-stat {
   font-size: clamp(8rem, 15vw, 24rem);
   line-height: 0.8;
   font-weight: 900;
   letter-spacing: -0.05em;
 }
+
 .masked-image {
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
@@ -79,7 +89,26 @@
   stroke: rgba(255, 255, 255, 0.22) !important;
   cursor: pointer;
 }
+
 #states-group path:hover {
   fill: rgba(225, 25, 25, 0.08) !important;
   stroke: rgba(225, 25, 25, 0.5) !important;
+}
+
+/* Custom Navbar Height Configuration */
+.navbar-custom {
+  height: 3.8rem !important;
+  /* 64px - Change this value to adjust closed height */
+}
+
+/* Branding logo container height matching the navbar */
+.navbar-logo-bar {
+  height: 4rem !important;
+  /* matches navbar height */
+}
+
+/* Scale the logo image to fit nicely within the height */
+.navbar-logo {
+  height: 3.3rem !important;
+  /* 40px - Change this value to adjust the logo size */
 }

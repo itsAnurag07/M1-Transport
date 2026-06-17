@@ -76,7 +76,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
   return (
     <>
       {/* Services Hero Section */}
-      <section className="relative h-[60vh] min-h-[450px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center" id="services-hero">
+      <section className="relative h-[60vh] min-h-[400px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center" id="services-hero">
         <div className="absolute inset-0">
           <img
             alt="Logistics terminal operations"
@@ -85,71 +85,62 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
+        <div className="relative max-w-7xl mx-auto w-full px-4 sm:px-6 text-white pt-20">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             Operational Infrastructure
           </span>
-          <h1 className="text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
             INTELLIGENT SUPPLY CHAINS. <br />
             <span className="text-secondary text-outline">ENGINEERED FOR PRECISION.</span>
           </h1>
-          <p className="text-xl md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl font-light text-white/85 max-w-2xl leading-relaxed">
             From direct capital linehauls to high-velocity cross-docking, we build logistics frameworks that drive efficiency and absolute visibility.
           </p>
         </div>
       </section>
 
       {/* Core Services Section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="services-core">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+      <section className="py-16 md:py-24 px-4 sm:px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="services-core">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-20">
           <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">Our Offerings</span>
-          <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
             Core Logistics Services
           </h2>
-          <p className="font-body-md text-on-surface-variant leading-relaxed text-lg mt-4">
+          <p className="font-body-md text-on-surface-variant leading-relaxed text-base sm:text-lg mt-4">
             Designed to address the standard bottlenecks in supply chain management: delay, inflated costs, and lack of transparency.
           </p>
         </div>
 
-        <div className="space-y-24">
+        <div className="space-y-16 md:space-y-24">
           {/* Service 1 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
               <span className="text-secondary font-black text-xl italic font-sans block">/01</span>
-              <h3 className="text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
                 Australian East Coast
               </h3>
-              <p className="text-on-surface-variant font-body-md text-base leading-relaxed">
+              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed">
                 Our core corridor linehaul network provides structured, daily scheduled freight distribution connecting Sydney, Melbourne, Brisbane, and Adelaide. With optimized lane schedules, we deliver cost-effective and highly reliable transport across the eastern states.
               </p>
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
                 <div>
-                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Lanes Covered</h4>
+                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Lanes Covered</h4>
                   <p className="text-xs text-on-surface-variant mt-1">Connecting VIC, NSW, QLD, and SA hubs.</p>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Consolidation</h4>
+                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Consolidation</h4>
                   <p className="text-xs text-on-surface-variant mt-1">Smarter cube utilization to minimize total freight cost.</p>
                 </div>
               </div>
-              <div className="  border-outline-variant/20">
-                <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider mb-1">Refrigerated Freight</h4>
+              <div className="border-outline-variant/20">
+                <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider mb-1 flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Refrigerated Freight</h4>
                 <p className="text-xs text-on-surface-variant leading-relaxed">Specialised in temperature-controlled transport solutions for perishable and sensitive goods.</p>
               </div>
-              <ul className="space-y-2 text-sm text-on-surface-variant list-none pl-0">
-                <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
-                  Door-to-door corridor transport
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
-                  Direct linehaul routing with minimal handling
-                </li>
-              </ul>
+
 
             </div>
-            <div className="lg:col-span-6 relative h-[450px] rounded-card overflow-hidden shadow-xl group">
+            <div className="lg:col-span-6 relative h-[280px] sm:h-[350px] md:h-[450px] rounded-card overflow-hidden shadow-xl group">
               <img
                 alt="Australian East Coast Freight"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -164,37 +155,28 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
           </div>
 
           {/* Service 2 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 lg:order-2 space-y-6">
               <span className="text-secondary font-black text-xl italic font-sans block">/02</span>
-              <h3 className="text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
                 Bulk Haulage
               </h3>
-              <p className="text-on-surface-variant font-body-md text-base leading-relaxed">
+              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed">
                 M1 handles large-scale industrial cargo, bulk materials, construction loads, and heavy logistics. Utilizing our high-payload trailer combinations and complying strictly with regulatory weight parameters, we move heavy tonnage safely and efficiently.
               </p>
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
                 <div>
-                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Heavy Capacity</h4>
+                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Heavy Capacity</h4>
                   <p className="text-xs text-on-surface-variant mt-1">High-payload configurations including B-Double combinations and split axle.</p>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Compliance</h4>
+                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Compliance</h4>
                   <p className="text-xs text-on-surface-variant mt-1">Full NHVR Mass &amp; Maintenance accreditation.</p>
                 </div>
               </div>
-              <ul className="space-y-2 text-sm text-on-surface-variant list-none pl-0">
-                <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
-                  Industrial and raw materials distribution
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
-                  Dedicated equipment configurations
-                </li>
-              </ul>
+
             </div>
-            <div className="lg:col-span-6 lg:order-1 relative h-[450px] rounded-card overflow-hidden shadow-xl group">
+            <div className="lg:col-span-6 lg:order-1 relative h-[280px] sm:h-[350px] md:h-[450px] rounded-card overflow-hidden shadow-xl group">
               <img
                 alt="Bulk Haulage Heavy Transport"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -209,37 +191,28 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
           </div>
 
           {/* Service 3 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
               <span className="text-secondary font-black text-xl italic font-sans block">/03</span>
-              <h3 className="text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
                 Third Party Logistics - 3PL
               </h3>
-              <p className="text-on-surface-variant font-body-md text-base leading-relaxed">
+              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed">
                 Our 3PL division provides comprehensive inventory storage, WMS-integrated tracking, SKU picking, container devanning, and localized distribution. We offer scalable storage systems tailored to optimize your company's supply chain lifecycle.
               </p>
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
                 <div>
-                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Inventory Storage</h4>
+                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Inventory Storage</h4>
                   <p className="text-xs text-on-surface-variant mt-1">Pallet storage with full stock count tracking.</p>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider">Systems</h4>
+                  <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Systems</h4>
                   <p className="text-xs text-on-surface-variant mt-1">API-linked WMS for real-time inventory visibility.</p>
                 </div>
               </div>
-              <ul className="space-y-2 text-sm text-on-surface-variant list-none pl-0">
-                <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
-                  Container unloading and break-bulk services
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-lg">check_circle</span>
-                  Metro delivery coordination and dispatch
-                </li>
-              </ul>
+
             </div>
-            <div className="lg:col-span-6 relative h-[450px] rounded-card overflow-hidden shadow-xl group">
+            <div className="lg:col-span-6 relative h-[280px] sm:h-[350px] md:h-[450px] rounded-card overflow-hidden shadow-xl group">
               <img
                 alt="Third Party Logistics 3PL"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -258,19 +231,19 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
 
 
       {/* Australia Network Map Section */}
-      <section className="py-24 bg-black text-white relative overflow-hidden" id="services-map">
+      <section className="py-16 md:py-24 bg-black text-white relative overflow-hidden" id="services-map">
         {/* Glowing Ambient Backgrounds */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/5 blur-[120px] rounded-full pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
 
             {/* Left Column: Text & Facts Details */}
             <div className="lg:col-span-5 flex flex-col items-start text-left">
               <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">
                 ● Service areas
               </span>
-              <h2 className="text-5xl font-extrabold italic tracking-tight uppercase leading-none font-sans text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight uppercase leading-none font-sans text-white mb-6">
                 Keeping Australia moving
               </h2>
               <p className="font-body-md text-white/70 leading-relaxed mb-8">
@@ -281,7 +254,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mb-10">
                 <div className="border-l-2 border-secondary pl-4 py-1">
                   <h4 className="text-xs font-bold text-white uppercase font-label-caps tracking-wider mb-1">Melbourne HQ</h4>
-                  <p className="text-[11px] text-white/50 leading-relaxed">Core depot coordinating national linehauls.</p>
+                  <p className="text-[11px] text-white/50 leading-relaxed">2 Raymond Rd, Laverton North, 3026 Vic</p>
                 </div>
                 <div className="border-l-2 border-secondary pl-4 py-1">
                   <h4 className="text-xs font-bold text-white uppercase font-label-caps tracking-wider mb-1">Eastern Seaboard</h4>
@@ -561,11 +534,11 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* Accordion FAQ Section */}
-      <section className="py-20 bg-surface-container-low px-6" id="services-faq">
+      <section className="py-16 md:py-20 bg-surface-container-low px-4 sm:px-6" id="services-faq">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold block mb-4">Got Questions?</span>
-            <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
               Frequently Asked Questions
             </h2>
           </div>
@@ -588,12 +561,13 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                     </span>
                   </button>
                   <div
-                    className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-60 border-t border-outline-variant/10 p-6' : 'max-h-0 overflow-hidden'
-                      }`}
+                    className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-60 border-t border-outline-variant/10' : 'max-h-0'}`}
                   >
-                    <p className="text-on-surface-variant font-body-md text-sm leading-relaxed">
-                      {faq.answer}
-                    </p>
+                    <div className="p-6">
+                      <p className="text-on-surface-variant font-body-md text-sm leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );
@@ -603,29 +577,29 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* Bottom Services CTA Section */}
-      <section className="py-16" id="services-cta">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="kinetic-bg relative overflow-hidden p-8 lg:p-16 group rounded-card">
+      <section className="py-12 md:py-16" id="services-cta">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="kinetic-bg relative overflow-hidden p-6 sm:p-10 lg:p-16 group rounded-card">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
               <div className="absolute top-0 left-0 text-[30rem] font-black text-white leading-none -translate-x-1/2 -translate-y-1/2 select-none">M1</div>
             </div>
-            <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
+            <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12">
               <div className="max-w-2xl">
-                <h2 className="text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
                   Ready to optimize <br />your freight?
                 </h2>
-                <p className="text-white/80 text-base md:text-lg leading-relaxed font-body-lg">
+                <p className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed font-body-lg">
                   Speak directly to our logistics engineers today. We build custom lane structures and offer transparent pricing structures that help your business scale.
                 </p>
               </div>
               <div>
                 <button
                   onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-secondary px-8 py-4 font-bold text-lg md:text-xl italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button"
+                  className="bg-white text-secondary px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg md:text-xl font-bold italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button"
                 >
                   Consult an Expert
-                  <span className="material-symbols-outlined font-black text-2xl">rocket_launch</span>
+                  <span className="material-symbols-outlined font-black text-xl md:text-2xl">rocket_launch</span>
                 </button>
               </div>
             </div>

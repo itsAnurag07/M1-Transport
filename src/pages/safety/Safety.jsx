@@ -46,7 +46,7 @@ function Counter({ end, duration = 2000, decimals = 0, suffix = '', prefix = '' 
   }, [started, end, duration, decimals]);
 
   return (
-    <span ref={containerRef}>
+    <span ref={containerRef} className="whitespace-nowrap">
       {prefix}{count.toLocaleString(undefined, { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}{suffix}
     </span>
   );
@@ -99,7 +99,7 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
   return (
     <>
       {/* Safety Hero Section */}
-      <section className="relative h-[60vh] min-h-[450px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center" id="safety-hero">
+      <section className="relative h-[60vh] min-h-[400px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center" id="safety-hero">
         <div className="absolute inset-0">
           <img
             alt="Fleet safety inspection"
@@ -108,16 +108,16 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
+        <div className="relative max-w-7xl mx-auto w-full px-4 sm:px-6 text-white pt-20">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             Safety & Compliance
           </span>
-          <h1 className="text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
             Safety is not a priority. <br />
             <span className="text-secondary text-outline">It's a value.</span>
           </h1>
-          <p className="text-xl md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl font-light text-white/85 max-w-2xl leading-relaxed">
             Every journey begins and ends with safety. Our systems, training, and culture ensure zero-compromise protection for our people, cargo, and community.
           </p>
         </div>
@@ -125,14 +125,14 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
 
 
       {/* Safety Pillars Section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto" id="safety-pillars">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      <section className="py-16 md:py-24 px-4 sm:px-6 max-w-7xl mx-auto" id="safety-pillars">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           <div className="lg:col-span-5">
             <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">Our Framework</span>
-            <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans mb-6">
               Four Pillars of Safety
             </h2>
-            <p className="text-on-surface-variant font-body-md text-base leading-relaxed mb-8">
+            <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed mb-8">
               Our safety management system is built on four core pillars aligned with NHVR standards and Chain of Responsibility legislation.
             </p>
 
@@ -160,7 +160,7 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
 
           {/* Active Pillar Detail */}
           <div className="lg:col-span-7">
-            <div className="bg-white border border-outline-variant/20 rounded-card p-10 shadow-lg h-full flex flex-col justify-center">
+            <div className="bg-white border border-outline-variant/20 rounded-card p-6 sm:p-10 shadow-lg h-full flex flex-col justify-center">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center">
                   <span className="material-symbols-outlined text-3xl text-secondary">{pillars[activePillar].icon}</span>
@@ -190,11 +190,11 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
 
 
       {/* Certifications Section */}
-      <section className="py-20 bg-black text-white overflow-hidden" id="safety-certifications">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 md:py-20 bg-black text-white overflow-hidden px-4 sm:px-6" id="safety-certifications">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 md:mb-16">
             <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">● Industry Standards</span>
-            <h2 className="text-5xl font-extrabold italic tracking-tight text-white uppercase leading-none font-sans">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-white uppercase leading-none font-sans">
               Accreditations & Certifications
             </h2>
           </div>
@@ -218,13 +218,13 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
 
 
       {/* Vehicle Safety Technology */}
-      <section className="py-20 px-6 max-w-7xl mx-auto" id="safety-technology">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+      <section className="py-16 md:py-20 px-4 sm:px-6 max-w-7xl mx-auto" id="safety-technology">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">Onboard Systems</span>
-          <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
             Vehicle Safety Technology
           </h2>
-          <p className="font-body-md text-on-surface-variant leading-relaxed text-lg mt-4">
+          <p className="font-body-md text-on-surface-variant leading-relaxed text-base sm:text-lg mt-4">
             Every vehicle in our fleet is equipped with advanced safety systems that exceed industry standards.
           </p>
         </div>
@@ -233,7 +233,7 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
           {safetyFeatures.map((feature, index) => (
             <div
               key={index}
-              className="group bg-white border border-outline-variant/20 rounded-card p-8 hover:shadow-lg hover:border-secondary/20 transition-all duration-300"
+              className="group bg-white border border-outline-variant/20 rounded-card p-6 sm:p-8 hover:shadow-lg hover:border-secondary/20 transition-all duration-300"
             >
               <span className="material-symbols-outlined text-3xl text-secondary mb-5 block group-hover:scale-110 transition-transform">
                 {feature.icon}
@@ -247,36 +247,36 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
 
 
       {/* Safety Stats */}
-      <section className="py-20 bg-surface-container-low" id="safety-stats">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 md:py-20 bg-surface-container-low px-4 sm:px-6" id="safety-stats">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 md:mb-16">
             <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">Our Track Record</span>
-            <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
               Safety in Numbers
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 sm:gap-8">
             <div className="text-center">
-              <div className="text-5xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl font-light text-primary tracking-tight mb-2">
                 <Counter end={99.8} decimals={1} suffix="%" />
               </div>
               <p className="text-sm text-on-surface-variant font-body-md">Compliance Rate</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl font-light text-primary tracking-tight mb-2">
                 <Counter end={0} suffix="" />
               </div>
               <p className="text-sm text-on-surface-variant font-body-md">Major Incidents (2024)</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl font-light text-primary tracking-tight mb-2">
                 <Counter end={100} suffix="%" />
               </div>
               <p className="text-sm text-on-surface-variant font-body-md">Fleet GPS Coverage</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl font-light text-primary tracking-tight mb-2">
                 <Counter end={4} suffix="x" />
               </div>
               <p className="text-sm text-on-surface-variant font-body-md">Annual Audits per Site</p>
@@ -287,15 +287,15 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
 
 
       {/* Driver Training Section */}
-      <section className="py-20 bg-black text-white overflow-hidden" id="safety-training">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-20 bg-black text-white overflow-hidden px-4 sm:px-6" id="safety-training">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div>
               <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">● Our People</span>
-              <h2 className="text-5xl font-extrabold italic tracking-tight text-white uppercase leading-none font-sans mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-white uppercase leading-none font-sans mb-6">
                 Driver Training & Development
               </h2>
-              <p className="text-white/60 text-base leading-relaxed font-body-md mb-8">
+              <p className="text-white/60 text-sm sm:text-base leading-relaxed font-body-md mb-8">
                 Every M1 driver completes a comprehensive induction program and ongoing competency assessments covering defensive driving, load restraint, fatigue awareness, and emergency response.
               </p>
 
@@ -315,7 +315,7 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
               </div>
             </div>
 
-            <div className="relative h-[420px] rounded-card overflow-hidden group">
+            <div className="relative h-[250px] sm:h-[350px] md:h-[420px] rounded-card overflow-hidden group">
               <img
                 alt="Driver training session"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -329,23 +329,23 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
 
 
       {/* Bottom CTA */}
-      <section className="py-16" id="safety-cta">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="relative bg-primary rounded-card overflow-hidden px-12 py-16">
+      <section className="py-12 md:py-16 px-4 sm:px-6" id="safety-cta">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative bg-primary rounded-card overflow-hidden px-6 py-10 sm:px-12 sm:py-16">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(211,47,47,0.15),transparent_60%)]"></div>
-            <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
+            <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12">
               <div className="max-w-2xl">
-                <h2 className="text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
                   Safety starts with <br />the right partner.
                 </h2>
-                <p className="text-white/80 text-base md:text-lg leading-relaxed font-body-lg">
+                <p className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed font-body-lg">
                   Partner with a carrier that treats safety as a core business value — not just a checkbox.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">
                 <button
                   onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-secondary text-white px-10 py-4 font-black text-lg italic uppercase tracking-tighter hover:bg-[#BD1C19] transition-all flex items-center justify-center gap-3 cursor-pointer border-none outline-none rounded-button"
+                  className="bg-secondary text-white px-6 py-3.5 sm:px-10 sm:py-4 text-base sm:text-lg font-black italic uppercase tracking-tighter hover:bg-[#BD1C19] transition-all flex items-center justify-center gap-3 cursor-pointer border-none outline-none rounded-button"
                 >
                   Talk to our safety team
                   <span className="material-symbols-outlined">arrow_forward</span>

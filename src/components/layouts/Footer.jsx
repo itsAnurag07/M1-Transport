@@ -64,7 +64,7 @@ function Footer({ navigateTo, navigateToHomeAndScroll }) {
         </div>
       </div>
       <div className="px-6 py-8 max-w-7xl mx-auto border-t border-outline/10 text-on-surface-variant text-sm font-label-caps opacity-60 flex flex-col md:flex-row justify-between items-center gap-4">
-        <span>© 2024 M1 Transport Australia. All rights reserved.</span>
+        <span>© 2026 M1 Transport Australia. All rights reserved.</span>
         <span>
           Designed and Developed by{' '}
           <a href="https://intelloft.com" target="_blank" rel="noopener noreferrer" className="text-secondary font-bold hover:underline transition-all">

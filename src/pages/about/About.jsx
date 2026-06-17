@@ -46,7 +46,7 @@ function Counter({ end, duration = 2000, decimals = 0, suffix = '', prefix = '' 
   }, [started, end, duration, decimals]);
 
   return (
-    <span ref={containerRef}>
+    <span ref={containerRef} className="whitespace-nowrap">
       {prefix}{count.toLocaleString(undefined, { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}{suffix}
     </span>
   );
@@ -68,69 +68,69 @@ function About({ navigateToHomeAndScroll }) {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
+        <div className="relative max-w-7xl mx-auto w-full px-4 md:px-6 text-white pt-20">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             About M1 Transport
           </span>
-          <h1 className="text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
             A Legacy of Movement. <br />
             <span className="text-secondary text-outline">A Future of Intelligence.</span>
           </h1>
-          <p className="text-xl md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
             For over 15 years, we have connected Australian businesses with smart, reliable, and transparent supply chain operations.
           </p>
         </div>
       </section>
 
       {/* Our Mission & Core Values Section */}
-      <section className="py-24 px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-values">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 items-center">
+      <section className="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-values">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16 items-center">
           <div className="lg:col-span-7">
             <span className="block font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-secondary inline-block mr-2 align-middle"></span>
               Core Principles
             </span>
-            <h2 className="text-5xl font-extrabold italic tracking-tight text-primary leading-none uppercase font-sans">
+            <h2 className="text-3xl md:text-5xl font-extrabold italic tracking-tight text-primary leading-none uppercase font-sans">
               Driven by Purpose.
             </h2>
           </div>
-          <div className="lg:col-span-5 border-l-2 border-secondary pl-8 py-2">
-            <p className="font-body-md text-on-surface-variant leading-relaxed text-lg">
+          <div className="lg:col-span-5 border-l-2 border-secondary pl-6 md:pl-8 py-2">
+            <p className="font-body-md text-on-surface-variant leading-relaxed text-base md:text-lg">
               Our business model isn't just about moving cargo; it's about engineering efficiencies that help our partners scale sustainably.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {/* Card 1 */}
-          <div className="bg-surface-container-low rounded-card p-10 border border-outline-variant/20 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div className="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center mb-8">
-              <span className="material-symbols-outlined text-3xl">verified_user</span>
+          <div className="bg-surface-container-low rounded-card p-6 sm:p-10 border border-outline-variant/20 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-primary text-white flex items-center justify-center mb-6 md:mb-8">
+              <span className="material-symbols-outlined text-2xl md:text-3xl">verified_user</span>
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-4">Operational Integrity</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4">Operational Integrity</h3>
             <p className="text-on-surface-variant leading-relaxed font-body-md text-sm">
               We own our assets, manage our drivers, and control the entire lifecycle of your shipment. No broker markups, no surprise delays.
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-surface-container-low rounded-card p-10 border border-outline-variant/20 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div className="w-14 h-14 rounded-2xl bg-secondary text-white flex items-center justify-center mb-8">
-              <span className="material-symbols-outlined text-3xl">hub</span>
+          <div className="bg-surface-container-low rounded-card p-6 sm:p-10 border border-outline-variant/20 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-secondary text-white flex items-center justify-center mb-6 md:mb-8">
+              <span className="material-symbols-outlined text-2xl md:text-3xl">hub</span>
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-4">Smart Consolidation</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4">Smart Consolidation</h3>
             <p className="text-on-surface-variant leading-relaxed font-body-md text-sm">
               By utilizing advanced cube optimization and regional cross-docks, we slash empty miles, lowering shipping costs and emissions.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-surface-container-low rounded-card p-10 border border-outline-variant/20 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <div className="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center mb-8">
-              <span className="material-symbols-outlined text-3xl">visibility</span>
+          <div className="bg-surface-container-low rounded-card p-6 sm:p-10 border border-outline-variant/20 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-primary text-white flex items-center justify-center mb-6 md:mb-8">
+              <span className="material-symbols-outlined text-2xl md:text-3xl">visibility</span>
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-4">Total Transparency</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4">Total Transparency</h3>
             <p className="text-on-surface-variant leading-relaxed font-body-md text-sm">
               Through direct tracking and automated notifications, you have a direct window into our operations. We communicate facts, not estimates.
             </p>
@@ -139,15 +139,15 @@ function About({ navigateToHomeAndScroll }) {
       </section>
 
 
-      <section className="py-24 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
-        <div className="max-w-7xl mx-auto px-6 md:px-[64px]">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
+      <section className="py-16 md:py-24 bg-black overflow-hidden opacity-100 translate-y-0" id="about-commitment">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-[64px]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-stretch">
             {/* Left Column: Interactive Visual Panel */}
             <div className="lg:col-span-6 order-2 lg:order-1 relative flex flex-col h-full">
               {/* Background Red Neon Blur Radial Glow */}
               <div className="absolute inset-0 bg-secondary/15 filter blur-[100px] rounded-full -z-10 animate-pulse duration-[8000ms]"></div>
 
-              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-4 overflow-hidden w-full h-full min-h-[440px] shadow-2xl flex flex-col justify-between">
+              <div className="relative border border-zinc-800/80 bg-zinc-950/40 rounded-card p-4 overflow-hidden w-full h-full min-h-[300px] sm:min-h-[440px] shadow-2xl flex flex-col justify-between">
                 <div className="relative w-full h-full rounded-card overflow-hidden">
                   {/* Image 1: Precision */}
                   <img
@@ -249,7 +249,7 @@ function About({ navigateToHomeAndScroll }) {
                   <div className="h-1 w-12 bg-secondary"></div>
                   <span className="font-bold tracking-[0.3em] text-secondary text-[10px] uppercase font-label-caps">OUR COMMITMENT</span>
                 </div>
-                <h2 className="text-[2rem] font-extrabold italic tracking-tight leading-tight uppercase text-white font-sans">
+                <h2 className="text-2xl sm:text-[2rem] font-extrabold italic tracking-tight leading-tight uppercase text-white font-sans">
                   Freight done smarter, <br />
                   <span className="text-secondary">faster, and transparently.</span>
                 </h2>
@@ -260,7 +260,7 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(0)}
                   onClick={() => setActiveTab(0)}
-                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${activeTab === 0
+                  className={`w-full text-left py-3 px-3 sm:py-4 sm:px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-3 sm:gap-6 items-start ${activeTab === 0
                     ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                     : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
                     }`}
@@ -269,8 +269,8 @@ function About({ navigateToHomeAndScroll }) {
                     <div className="absolute top-0 bottom-0 left-0 w-1 bg-secondary shadow-[0_0_12px_#e11919] rounded-full"></div>
                   )}
                   <span className={`font-black text-xl italic mt-0.5 transition-colors duration-300 ${activeTab === 0 ? 'text-secondary' : 'text-white/60'}`}>/01</span>
-                  <div>
-                    <h3 className={`font-black text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 0 ? 'text-white' : 'text-white/70'}`}>
+                  <div className="flex-1">
+                    <h3 className={`font-black text-base sm:text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 0 ? 'text-white' : 'text-white/70'}`}>
                       Precision in every move
                     </h3>
                     <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 0 ? 'text-white/80' : 'text-white/50'}`}>
@@ -283,7 +283,7 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(1)}
                   onClick={() => setActiveTab(1)}
-                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${activeTab === 1
+                  className={`w-full text-left py-3 px-3 sm:py-4 sm:px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-3 sm:gap-6 items-start ${activeTab === 1
                     ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                     : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
                     }`}
@@ -292,8 +292,8 @@ function About({ navigateToHomeAndScroll }) {
                     <div className="absolute top-0 bottom-0 left-0 w-1 bg-secondary shadow-[0_0_12px_#e11919] rounded-full"></div>
                   )}
                   <span className={`font-black text-xl italic mt-0.5 transition-colors duration-300 ${activeTab === 1 ? 'text-secondary' : 'text-white/60'}`}>/02</span>
-                  <div>
-                    <h3 className={`font-black text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 1 ? 'text-white' : 'text-white/70'}`}>
+                  <div className="flex-1">
+                    <h3 className={`font-black text-base sm:text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 1 ? 'text-white' : 'text-white/70'}`}>
                       Transparency at every step
                     </h3>
                     <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 1 ? 'text-white/80' : 'text-white/50'}`}>
@@ -306,7 +306,7 @@ function About({ navigateToHomeAndScroll }) {
                 <button
                   onMouseEnter={() => setActiveTab(2)}
                   onClick={() => setActiveTab(2)}
-                  className={`w-full text-left py-4 px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-6 items-start ${activeTab === 2
+                  className={`w-full text-left py-3 px-3 sm:py-4 sm:px-5 transition-all duration-300 rounded-card border relative overflow-hidden outline-none cursor-pointer flex gap-3 sm:gap-6 items-start ${activeTab === 2
                     ? 'bg-gradient-to-r from-white/10 via-white/5 to-transparent border-secondary/40 shadow-[0_0_25px_rgba(225,25,25,0.08)] scale-[1.02]'
                     : 'bg-transparent border-white/5 opacity-50 hover:opacity-80'
                     }`}
@@ -315,8 +315,8 @@ function About({ navigateToHomeAndScroll }) {
                     <div className="absolute top-0 bottom-0 left-0 w-1 bg-secondary shadow-[0_0_12px_#e11919] rounded-full"></div>
                   )}
                   <span className={`font-black text-xl italic mt-0.5 transition-colors duration-300 ${activeTab === 2 ? 'text-secondary' : 'text-white/60'}`}>/03</span>
-                  <div>
-                    <h3 className={`font-black text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 2 ? 'text-white' : 'text-white/70'}`}>
+                  <div className="flex-1">
+                    <h3 className={`font-black text-base sm:text-lg uppercase italic mb-1 tracking-tight transition-colors duration-300 ${activeTab === 2 ? 'text-white' : 'text-white/70'}`}>
                       Reliability you can count on
                     </h3>
                     <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 2 ? 'text-white/80' : 'text-white/50'}`}>
@@ -329,7 +329,7 @@ function About({ navigateToHomeAndScroll }) {
               <div className="pt-3">
                 <button
                   onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-black px-8 py-3.5 font-black text-base italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button"
+                  className="bg-white text-black px-6 py-3 sm:px-8 sm:py-3.5 font-black text-sm sm:text-base italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button"
                 >
                   Get started today
                   <span className="material-symbols-outlined font-black">arrow_forward</span>
@@ -342,8 +342,8 @@ function About({ navigateToHomeAndScroll }) {
 
 
       {/* Section: Why Choose Us (Stats) */}
-      <section className="py-24 px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-stats">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <section className="py-16 md:py-24 px-4 sm:px-6 max-w-7xl mx-auto opacity-100 translate-y-0" id="about-stats">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Left Column (Content) */}
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-2">
@@ -353,7 +353,7 @@ function About({ navigateToHomeAndScroll }) {
               <span className="font-bold text-[10px] uppercase tracking-widest text-primary font-label-caps">Why choose us</span>
             </div>
 
-            <h2 className="text-5xl font-normal leading-tight text-on-surface-variant/60 font-sans">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal leading-tight text-on-surface-variant/60 font-sans">
               A smarter freight network built on <span className="font-extrabold text-primary">15+ years of</span> experience.
             </h2>
 
@@ -363,28 +363,28 @@ function About({ navigateToHomeAndScroll }) {
           </div>
 
           {/* Right Column (Stats Grid) */}
-          <div className="lg:col-span-6 grid grid-cols-2 gap-x-12 gap-y-12 pl-0 lg:pl-12">
+          <div className="lg:col-span-6 grid grid-cols-2 gap-x-6 gap-y-8 md:gap-x-12 md:gap-y-12 pl-0 lg:pl-12">
             <div>
-              <div className="text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={15} suffix="+" />
               </div>
               <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">Years of Logistics Excellence</div>
             </div>
             <div>
-              <div className="text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={100} suffix="+" />
               </div>
               <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">
                 Business Clients</div>
             </div>
             <div>
-              <div className="text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={1} decimals={1} suffix="M+" />
               </div>
               <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">Shipments Delivered Safely</div>
             </div>
             <div>
-              <div className="text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={99} suffix="%" />
               </div>
               <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">On-Time Delivery Rate</div>
@@ -395,27 +395,27 @@ function About({ navigateToHomeAndScroll }) {
 
 
       {/* Section 6: Partner - YOLO Variant */}
-      <section className="py-24 opacity-100 translate-y-0" id="about-yolo-cta">
-        <div className="max-w-7xl mx-auto px-6 md:px-[64px]">
-          <div className="kinetic-bg relative overflow-hidden p-8 lg:p-16 group rounded-card">
+      <section className="py-16 md:py-24 opacity-100 translate-y-0" id="about-yolo-cta">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-[64px]">
+          <div className="kinetic-bg relative overflow-hidden p-6 sm:p-10 lg:p-16 group rounded-card">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
               <div className="absolute top-0 left-0 text-[30rem] font-black text-white leading-none -translate-x-1/2 -translate-y-1/2 select-none">M1</div>
             </div>
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
               <div>
-                <h2 className="text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
                   Partner with<br />M1 Transport today!
                 </h2>
-                <p className="text-white/80 text-base md:text-lg max-w-md mb-8 leading-relaxed font-body-lg">
+                <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-md mb-8 leading-relaxed font-body-lg">
                   Smarter consolidation. Faster freight. End-to-end support from first mile to final mile. Let's move your business forward.
                 </p>
                 <button
                   onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-secondary px-8 py-4 font-bold text-lg md:text-xl italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button"
+                  className="bg-white text-secondary px-6 py-3 text-base md:px-8 md:py-4 md:text-xl font-bold italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button"
                 >
                   Request a Quote
-                  <span className="material-symbols-outlined font-black text-2xl">rocket_launch</span>
+                  <span className="material-symbols-outlined font-black text-xl md:text-2xl">rocket_launch</span>
                 </button>
               </div>
               <div className="hidden lg:block relative h-full">
