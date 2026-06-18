@@ -89,7 +89,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
   return (
     <>
       {/* Fleet Hero Section */}
-      <section className="relative h-[60vh] min-h-[450px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center" id="fleet-hero">
+      <section className="relative h-[60vh] min-h-[450px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center pt-16 md:pt-0" id="fleet-hero">
         <div className="absolute inset-0">
           <img
             alt="Line of trucks on road"
@@ -103,11 +103,13 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             Asset Operations
           </span>
-          <h1 className="text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
             OUR CAPABILITY IN MOTION. <br />
-            <span className="text-secondary text-outline">THE M1 TRANSPORT FLEET.</span>
+            <span className="text-secondary text-outline">THE M1</span>{" "}
+            <span className="text-secondary text-outline">TRANSPORT</span>{" "}
+            <span className="text-secondary text-outline">FLEET.</span>
           </h1>
-          <p className="text-xl md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
             Fully company-owned assets, operated by qualified drivers and maintained to standard compliance. Moving Australia daily.
           </p>
         </div>
@@ -120,7 +122,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-baseline mb-16">
           <div className="lg:col-span-6">
             <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">Asset Capability</span>
-            <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
               Our Fleet Specifications
             </h2>
           </div>
@@ -186,21 +188,21 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
       <section className="py-20 px-6 max-w-7xl mx-auto" id="showroom">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">Asset Catalog</span>
-          <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
             Explore Our Fleet
           </h2>
-          <p className="font-body-md text-on-surface-variant leading-relaxed text-lg mt-4">
+          <p className="font-body-md text-on-surface-variant leading-relaxed text-sm sm:text-base md:text-lg mt-4">
             Select a vehicle class below to learn more about our fleet capabilities.
           </p>
         </div>
 
         {/* Tab Buttons */}
-        <div className="flex flex-wrap gap-3 justify-center mb-12 border-b border-outline-variant/30 pb-8">
+        <div className="flex flex-wrap gap-2 md:gap-3 justify-center mb-12 border-b border-outline-variant/30 pb-8">
           {Object.keys(vehicles).map((key) => (
             <button
               key={`tab-${key}`}
               onClick={() => setActiveTab(key)}
-              className={`py-4 px-6 rounded-button font-bold text-sm tracking-wide uppercase border text-center transition-all cursor-pointer ${activeTab === key
+              className={`py-2.5 px-4 md:py-4 md:px-6 rounded-button font-bold text-xs md:text-sm tracking-wide uppercase border text-center transition-all cursor-pointer ${activeTab === key
                 ? 'bg-primary border-primary text-white'
                 : 'bg-surface-container-low border-outline-variant/50 text-primary hover:bg-slate-100'
                 }`}
@@ -211,18 +213,18 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
         </div>
 
         {/* Tab Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8 lg:p-12 border border-outline-variant/20 rounded-card shadow-lg">
-          <div className="space-y-6">
-            <h3 className="text-3xl font-extrabold text-primary uppercase italic font-sans leading-none">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 sm:p-8 lg:p-12 border border-outline-variant/20 rounded-card shadow-lg">
+          <div className="space-y-4 md:space-y-6">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-primary uppercase italic font-sans leading-none">
               {vehicles[activeTab].name}
             </h3>
-            <p className="text-secondary font-bold font-body-md italic">{vehicles[activeTab].subtitle}</p>
-            <p className="text-on-surface-variant font-body-md text-sm leading-relaxed">
+            <p className="text-secondary font-bold font-body-md italic text-sm sm:text-base">{vehicles[activeTab].subtitle}</p>
+            <p className="text-on-surface-variant font-body-md text-xs sm:text-sm leading-relaxed">
               {vehicles[activeTab].description}
             </p>
           </div>
 
-          <div className="relative h-[380px] rounded-card overflow-hidden shadow-inner group">
+          <div className="relative h-[250px] sm:h-[300px] md:h-[380px] rounded-card overflow-hidden shadow-inner group">
             <img
               alt={vehicles[activeTab].name}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -249,7 +251,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
             </div>
             <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
               <div className="max-w-2xl">
-                <h2 className="text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic text-white mb-6 uppercase leading-none tracking-tight font-sans">
                   Book dedicated <br />fleet capacity today.
                 </h2>
                 <p className="text-white/80 text-base md:text-lg leading-relaxed font-body-lg">

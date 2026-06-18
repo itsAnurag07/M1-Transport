@@ -31,7 +31,7 @@ function Contact({ navigateTo }) {
   return (
     <>
       {/* Contact Hero Section */}
-      <section className="relative h-[50vh] min-h-[380px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center" id="contact-hero">
+      <section className="relative h-[50vh] min-h-[380px] overflow-hidden opacity-100 translate-y-0 bg-black flex items-center pt-16 md:pt-0" id="contact-hero">
         <div className="absolute inset-0">
           <img
             alt="Logistics warehouse"
@@ -45,11 +45,12 @@ function Contact({ navigateTo }) {
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             Get in Touch
           </span>
-          <h1 className="text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tighter uppercase mb-6 leading-none max-w-4xl font-sans">
             Let's move your <br />
-            <span className="text-secondary text-outline">freight forward.</span>
+            <span className="text-secondary text-outline">freight</span>{" "}
+            <span className="text-secondary text-outline">forward.</span>
           </h1>
-          <p className="text-xl md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
             Whether you need a quote, have a question, or want to explore a logistics partnership — our team is ready.
           </p>
         </div>
@@ -64,7 +65,7 @@ function Contact({ navigateTo }) {
           <div className="lg:col-span-7">
             <div className="mb-10">
               <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">Send a Message</span>
-              <h2 className="text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
                 Request a Quote
               </h2>
             </div>
@@ -179,7 +180,7 @@ function Contact({ navigateTo }) {
           <div className="lg:col-span-5">
             <div className="mb-10">
               <span className="font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 block">● Direct Lines</span>
-              <h2 className="text-3xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
+              <h2 className="text-2xl sm:text-3xl font-extrabold italic tracking-tight text-primary uppercase leading-none font-sans">
                 Reach Us Directly
               </h2>
             </div>
@@ -223,7 +224,7 @@ function Contact({ navigateTo }) {
             </div>
 
             {/* Operating Hours */}
-            <div className="bg-primary rounded-xl p-8 text-white">
+            <div className="bg-primary rounded-xl p-6 sm:p-8 text-white">
               <h4 className="text-sm font-bold uppercase tracking-widest mb-4 flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-lg">schedule</span>
                 Operating Hours
