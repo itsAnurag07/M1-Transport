@@ -220,20 +220,20 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             </p>
           </div>
           <div className="space-y-0 text-primary">
-            <div className="group flex flex-col md:flex-row justify-between items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
-              <h4 className="font-headline-lg text-xl md:text-headline-lg text-center md:text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Australian East Coast</h4>
+            <div className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
+              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Australian East Coast</h4>
               <button onClick={() => navigateTo('services')} className="flex items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
               </button>
             </div>
-            <div className="group flex flex-col md:flex-row justify-between items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
-              <h4 className="font-headline-lg text-xl md:text-headline-lg text-center md:text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Bulk Haulage</h4>
+            <div className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
+              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Bulk Haulage</h4>
               <button onClick={() => navigateTo('services')} className="flex items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
               </button>
             </div>
-            <div className="group flex flex-col md:flex-row justify-between items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
-              <h4 className="font-headline-lg text-xl md:text-headline-lg text-center md:text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Third Party Logistics - 3PL</h4>
+            <div className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
+              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Third Party Logistics - 3PL</h4>
               <button onClick={() => navigateTo('services')} className="flex items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
               </button>
