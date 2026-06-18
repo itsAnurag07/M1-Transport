@@ -5,7 +5,7 @@ function Header({ currentPage, navigateTo, navigateToHomeAndScroll, isScrolled }
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-2 md:top-3 left-0 right-0 z-50 px-3 md:px-6">
+    <header className="fixed top-4 md:top-6 left-0 right-0 z-50 px-3 md:px-6">
       <nav className={`max-w-7xl mx-auto bg-white/95 backdrop-blur-md rounded-button px-4 md:px-8 transition-all duration-300 ${isMobileMenuOpen ? 'h-auto py-3' : 'navbar-custom'} md:navbar-custom flex flex-col md:flex-row md:items-center justify-between border border-outline-variant/20 ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
         <div className="flex items-center justify-between w-full md:w-auto navbar-logo-bar">
           <div className="flex items-center gap-2 md:gap-3 cursor-pointer h-full" onClick={() => { navigateTo('home'); setIsMobileMenuOpen(false); }}>
