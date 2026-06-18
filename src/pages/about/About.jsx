@@ -97,7 +97,7 @@ function About({ navigateToHomeAndScroll }) {
           </div>
           <div className="lg:col-span-5 border-l-2 border-secondary pl-6 md:pl-8 py-2">
             <p className="font-body-md text-on-surface-variant leading-relaxed text-base md:text-lg">
-              Our business model isn't just about moving cargo; it's about engineering efficiencies that help our partners scale sustainably.
+              We do more than move cargo. We engineer supply chain efficiencies that help our partners scale sustainably.
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ function About({ navigateToHomeAndScroll }) {
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4">Operational Integrity</h3>
             <p className="text-on-surface-variant leading-relaxed font-body-md text-sm">
-              We own our assets, manage our drivers, and control the entire lifecycle of your shipment. No broker markups, no surprise delays.
+              We own our fleet and manage our drivers to control the entire shipment lifecycle. Enjoy zero broker markups and zero surprise delays.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ function About({ navigateToHomeAndScroll }) {
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4">Smart Consolidation</h3>
             <p className="text-on-surface-variant leading-relaxed font-body-md text-sm">
-              By utilizing advanced cube optimization and regional cross-docks, we slash empty miles, lowering shipping costs and emissions.
+              Using advanced cube optimization and cross-docks, we slash empty miles to lower shipping costs and reduce environmental impact.
             </p>
           </div>
 
@@ -132,7 +132,7 @@ function About({ navigateToHomeAndScroll }) {
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4">Total Transparency</h3>
             <p className="text-on-surface-variant leading-relaxed font-body-md text-sm">
-              Through direct tracking and automated notifications, you have a direct window into our operations. We communicate facts, not estimates.
+              Our automated notifications and live tracking provide a direct window into our operations. We share facts, not estimates.
             </p>
           </div>
         </div>
@@ -152,92 +152,31 @@ function About({ navigateToHomeAndScroll }) {
                   {/* Image 1: Precision */}
                   <img
                     alt="Precision in every move"
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 0 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 0 ? 'opacity-100 scale-105 filter contrast-105' : 'opacity-0 scale-100'
                       }`}
                     src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800"
                   />
                   {/* Image 2: Transparency */}
                   <img
                     alt="Transparency at every step"
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 1 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 1 ? 'opacity-100 scale-105 filter contrast-105' : 'opacity-0 scale-100'
                       }`}
                     src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
                   />
                   {/* Image 3: Reliability */}
                   <img
                     alt="Reliability you can count on"
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 2 ? 'opacity-80 scale-105 filter brightness-90 contrast-110' : 'opacity-0 scale-100'
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 2 ? 'opacity-100 scale-105 filter contrast-105' : 'opacity-0 scale-100'
                       }`}
                     src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800"
                   />
 
                   {/* Premium Dark Vignette Overlays */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/30 to-transparent"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/10 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/15 via-transparent to-black/15"></div>
 
                   {/* Tech HUD overlay */}
-                  <div className="absolute inset-x-4 bottom-4 bg-black/65 backdrop-blur-md border border-white/10 rounded-xl p-4 text-white z-10 shadow-[0_4px_30px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-secondary/35">
-                    <div className="flex justify-between items-center border-b border-white/10 pb-2 mb-2">
-                      <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
-                        <span className="font-label-caps uppercase tracking-wider text-[9px] font-bold text-white/90">
-                          {activeTab === 0 ? "SYSTEM: CONSOLIDATION ENGINE" : activeTab === 1 ? "SYSTEM: TELEMETRY ENGINE" : "SYSTEM: DISPATCH SYSTEM"}
-                        </span>
-                      </div>
-                      <span className="font-label-caps bg-secondary/10 text-secondary border border-secondary/25 text-[8px] px-1.5 py-0.5 rounded-full font-bold uppercase tracking-widest">
-                        {activeTab === 0 ? "ROUTING: OPTIMIZED" : activeTab === 1 ? "GPS: ONLINE" : "NETWORK: OPTIMAL"}
-                      </span>
-                    </div>
 
-                    <div className="grid grid-cols-3 gap-3">
-                      {activeTab === 0 ? (
-                        <>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">CUBE UTILIZATION</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">96.4%</div>
-                          </div>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">EMPTY MILES SAVED</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">1,420 KM</div>
-                          </div>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">ROUTING LATENCY</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">&lt; 120MS</div>
-                          </div>
-                        </>
-                      ) : activeTab === 1 ? (
-                        <>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">SATELLITE SYNC</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">100% (GPS)</div>
-                          </div>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">TEMP STABILITY</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">4.2°C (STABLE)</div>
-                          </div>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">UPDATE FEED</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">REAL-TIME</div>
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">ACTIVE DEPOTS</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">5 / 5 NATIONAL</div>
-                          </div>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">DRIVER STATUS</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">VERIFIED</div>
-                          </div>
-                          <div>
-                            <div className="text-[8px] text-white/40 font-bold uppercase tracking-widest mb-0.5 font-label-caps">ON-TIME SLA</div>
-                            <div className="text-xs font-extrabold italic tracking-tight text-white font-sans">99.8%</div>
-                          </div>
-                        </>
-                      )}
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -274,7 +213,7 @@ function About({ navigateToHomeAndScroll }) {
                       Precision in every move
                     </h3>
                     <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 0 ? 'text-white/80' : 'text-white/50'}`}>
-                      Optimized consolidation and routing for faster, more efficient freight movement across the continent.
+                      Optimized route planning and lane consolidation for faster freight movement across Australia.
                     </p>
                   </div>
                 </button>
@@ -297,7 +236,7 @@ function About({ navigateToHomeAndScroll }) {
                       Transparency at every step
                     </h3>
                     <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 1 ? 'text-white/80' : 'text-white/50'}`}>
-                      Real-time communication, appointment handling, and operational clarity through our digital tracking suite.
+                      Automated status alerts, seamless appointment scheduling, and real-time transit visibility.
                     </p>
                   </div>
                 </button>
@@ -320,7 +259,7 @@ function About({ navigateToHomeAndScroll }) {
                       Reliability you can count on
                     </h3>
                     <p className={`text-xs leading-relaxed font-body-md transition-colors duration-300 ${activeTab === 2 ? 'text-white/80' : 'text-white/50'}`}>
-                      A multi-terminal network and experienced teams delivering consistently high performance every day.
+                      A robust national depot network and dedicated teams delivering consistent on-time performance.
                     </p>
                   </div>
                 </button>
@@ -358,7 +297,7 @@ function About({ navigateToHomeAndScroll }) {
             </h2>
 
             <p className="text-on-surface-variant leading-relaxed font-body-md text-base">
-              For 15+ years, we've been committed to solving the real problems in logistics — slow transit, high costs, middleman markups, and limited visibility. M1 Transport combines deep operational expertise with modern consolidation and routing to move freight faster, more efficiently, and with complete transparency.
+              We solve the core challenges of modern logistics: slow transit, inflated costs, and hidden fees. M1 Transport combines deep operational expertise with smart routing to deliver faster, highly transparent freight services.
             </p>
           </div>
 
@@ -368,26 +307,26 @@ function About({ navigateToHomeAndScroll }) {
               <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={15} suffix="+" />
               </div>
-              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">Years of Logistics Excellence</div>
+              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">Years of Excellence</div>
             </div>
             <div>
               <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={100} suffix="+" />
               </div>
               <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">
-                Business Clients</div>
+                Active Clients</div>
             </div>
             <div>
               <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={1} decimals={1} suffix="M+" />
               </div>
-              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">Shipments Delivered Safely</div>
+              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">Safe Deliveries</div>
             </div>
             <div>
               <div className="text-4xl sm:text-5xl md:text-6xl font-light text-primary tracking-tight mb-2">
                 <Counter end={99} suffix="%" />
               </div>
-              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">On-Time Delivery Rate</div>
+              <div className="text-xs md:text-sm text-on-surface-variant font-medium tracking-wide uppercase font-label-caps">On-Time Rate</div>
             </div>
           </div>
         </div>
@@ -408,7 +347,7 @@ function About({ navigateToHomeAndScroll }) {
                   Partner with<br />M1 Transport today!
                 </h2>
                 <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-md mb-8 leading-relaxed font-body-lg">
-                  Smarter consolidation. Faster freight. End-to-end support from first mile to final mile. Let's move your business forward.
+                  Get smarter freight consolidation, faster transit times, and dedicated end-to-end support. Let's move your business forward.
                 </p>
                 <button
                   onClick={() => navigateToHomeAndScroll('contact')}

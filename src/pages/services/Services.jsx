@@ -44,11 +44,11 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
 
   const getEstRouteInfo = () => {
     if (serviceType === 'linehaul') {
-      return 'Scheduled corridor transport and consolidation connecting Melbourne, Sydney, Brisbane, and Adelaide.';
+      return 'Scheduled linehaul transport connecting Melbourne, Sydney, Brisbane, and Adelaide.';
     } else if (serviceType === 'crossdock') {
-      return 'Specialized transport for heavy industrial, building material, and high-tonnage cargo.';
+      return 'Heavy transport for bulk industrial cargo and high-tonnage freight.';
     } else {
-      return 'State-of-the-art warehousing, SKU picking, pallet storage, and metro distribution.';
+      return 'Secure pallet storage, SKU picking, and 3PL distribution.';
     }
   };
 
@@ -57,19 +57,19 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
   const faqs = [
     {
       question: 'How does your hybrid consolidation model reduce total freight cost?',
-      answer: 'By grouping smaller shipments (LTL) into standard lanes and utilizing cube-optimization algorithms, we fill trailers efficiently. This allows you to pay only for the space you use, while enjoying the speed of a full truckload (FTL) without broker markups.'
+      answer: 'We combine smaller shipments (LTL) using cube-optimization algorithms to maximize trailer space. You pay only for the space you use, getting full truckload speed at competitive rates.'
     },
     {
       question: 'Do you support temperature-controlled or specialized cargo?',
-      answer: 'Yes, our fleet includes refrigerated trailers and temperature-monitored vans for sensitive food, pharmaceutical, and high-value freight. We ensure complete compliance with national safety standards.'
+      answer: 'Yes. Our fleet includes temperature-monitored trailers for food, pharma, and sensitive freight, fully compliant with national safety standards.'
     },
     {
       question: 'How are delivery tracking and status updates handled?',
-      answer: 'Unlike legacy carriers, we bypass manual update delays. You receive automated status notifications at key touchpoints (dispatch, terminal arrival, and final delivery). Direct dispatcher access is available for enterprise clients.'
+      answer: 'We provide automated status notifications at key milestones (dispatch, transit, and delivery) with direct dispatcher access for enterprise clients.'
     },
     {
       question: 'What regions and cities does M1 Transport service?',
-      answer: 'We run major national linehaul routes connecting Sydney, Melbourne, Brisbane, Adelaide, and Perth, along with regional distribution hubs serving over 800 cities across Australia.'
+      answer: 'We cover primary national routes connecting Sydney, Melbourne, Brisbane, Adelaide, and Perth, along with regional feeder hubs nationwide.'
     }
   ];
 
@@ -95,7 +95,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
             <span className="text-secondary text-outline">ENGINEERED FOR PRECISION.</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl font-light text-white/85 max-w-2xl leading-relaxed">
-            From direct capital linehauls to high-velocity cross-docking, we build logistics frameworks that drive efficiency and absolute visibility.
+            High-velocity freight, reliable linehaul corridors, and smart logistics solutions tailored for Australian businesses.
           </p>
         </div>
       </section>
@@ -108,7 +108,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
             Core Logistics Services
           </h2>
           <p className="font-body-md text-on-surface-variant leading-relaxed text-base sm:text-lg mt-4">
-            Designed to address the standard bottlenecks in supply chain management: delay, inflated costs, and lack of transparency.
+            Streamlined freight, warehousing, and bulk transport solutions designed to eliminate bottlenecks, reduce costs, and enhance supply chain visibility.
           </p>
         </div>
 
@@ -120,22 +120,25 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
                 Australian East Coast
               </h3>
-              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed">
-                Our core corridor linehaul network provides structured, daily scheduled freight distribution connecting Sydney, Melbourne, Brisbane, and Adelaide. With optimized lane schedules, we deliver cost-effective and highly reliable transport across the eastern states.
+              <p className="text-secondary font-bold text-sm tracking-wide uppercase font-label-caps">
+                Daily scheduled linehaul linking major capital cities.
+              </p>
+              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed mt-2">
+                Our daily corridor network connects Sydney, Melbourne, Brisbane, and Adelaide. With optimized routes and schedules, we deliver cost-effective, reliable freight distribution across the eastern states.
               </p>
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Lanes Covered</h4>
-                  <p className="text-xs text-on-surface-variant mt-1">Connecting VIC, NSW, QLD, and SA hubs.</p>
+                  <p className="text-xs text-on-surface-variant mt-1">Daily routes connecting VIC, NSW, QLD, and SA.</p>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Consolidation</h4>
-                  <p className="text-xs text-on-surface-variant mt-1">Smarter cube utilization to minimize total freight cost.</p>
+                  <p className="text-xs text-on-surface-variant mt-1">Smarter lane grouping to minimize total freight cost.</p>
                 </div>
               </div>
               <div className="border-outline-variant/20">
-                <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider mb-1 flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Refrigerated Freight</h4>
-                <p className="text-xs text-on-surface-variant leading-relaxed">Specialised in temperature-controlled transport solutions for perishable and sensitive goods.</p>
+                <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider mb-1 flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Refrigerated</h4>
+                <p className="text-xs text-on-surface-variant leading-relaxed">Temperature-controlled transport for sensitive and perishable freight.</p>
               </div>
 
 
@@ -161,13 +164,16 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
                 Bulk Haulage
               </h3>
-              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed">
-                M1 handles large-scale industrial cargo, bulk materials, construction loads, and heavy logistics. Utilizing our high-payload trailer combinations and complying strictly with regulatory weight parameters, we move heavy tonnage safely and efficiently.
+              <p className="text-secondary font-bold text-sm tracking-wide uppercase font-label-caps">
+                High-capacity transport for heavy industrial and bulk cargo.
+              </p>
+              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed mt-2">
+                We transport high-tonnage materials, construction loads, and heavy logistics. Our fleet utilizes modern B-Double configurations to move bulk cargo safely under strict NHVR compliance.
               </p>
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Heavy Capacity</h4>
-                  <p className="text-xs text-on-surface-variant mt-1">High-payload configurations including B-Double combinations and split axle.</p>
+                  <p className="text-xs text-on-surface-variant mt-1">High-payload B-Double configurations.</p>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Compliance</h4>
@@ -197,17 +203,20 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary uppercase italic font-sans leading-none">
                 Third Party Logistics - 3PL
               </h3>
-              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed">
-                Our 3PL division provides comprehensive inventory storage, WMS-integrated tracking, SKU picking, container devanning, and localized distribution. We offer scalable storage systems tailored to optimize your company's supply chain lifecycle.
+              <p className="text-secondary font-bold text-sm tracking-wide uppercase font-label-caps">
+                Fully integrated warehousing and smart inventory distribution.
+              </p>
+              <p className="text-on-surface-variant font-body-md text-sm sm:text-base leading-relaxed mt-2">
+                Scale your supply chain with our end-to-end warehousing solutions. We handle pallet storage, container devanning, SKU picking, and last-mile distribution with real-time tracking.
               </p>
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/30">
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Inventory Storage</h4>
-                  <p className="text-xs text-on-surface-variant mt-1">Pallet storage with full stock count tracking.</p>
+                  <p className="text-xs text-on-surface-variant mt-1">Pallet storage with precise tracking.</p>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase font-label-caps tracking-wider flex items-center gap-1.5"><span className="material-symbols-outlined text-secondary text-base">check_circle</span>Systems</h4>
-                  <p className="text-xs text-on-surface-variant mt-1">API-linked WMS for real-time inventory visibility.</p>
+                  <p className="text-xs text-on-surface-variant mt-1">API-driven WMS for real-time visibility.</p>
                 </div>
               </div>
 
@@ -247,26 +256,26 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                 Keeping Australia moving
               </h2>
               <p className="font-body-md text-white/70 leading-relaxed mb-8">
-                We are based in Melbourne and have depots right across the Australian Eastern Seaboard. Take advantage of our robust network and get a local solution by those who really understand your needs.
+                With our Melbourne HQ and depots along the Eastern Seaboard, our network provides reliable local solutions connecting Australia’s key commerce hubs.
               </p>
 
               {/* Highlight Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mb-10">
                 <div className="border-l-2 border-secondary pl-4 py-1">
                   <h4 className="text-xs font-bold text-white uppercase font-label-caps tracking-wider mb-1">Melbourne HQ</h4>
-                  <p className="text-[11px] text-white/50 leading-relaxed">2 Raymond Rd, Laverton North, 3026 Vic</p>
+                  <p className="text-[11px] text-white/50 leading-relaxed">Laverton North distribution hub.</p>
                 </div>
                 <div className="border-l-2 border-secondary pl-4 py-1">
                   <h4 className="text-xs font-bold text-white uppercase font-label-caps tracking-wider mb-1">Eastern Seaboard</h4>
-                  <p className="text-[11px] text-white/50 leading-relaxed">Capital city depots linking key commerce hubs.</p>
+                  <p className="text-[11px] text-white/50 leading-relaxed">Depots at key capital cities and ports.</p>
                 </div>
                 <div className="border-l-2 border-secondary pl-4 py-1">
                   <h4 className="text-xs font-bold text-white uppercase font-label-caps tracking-wider mb-1">Real-Time Routing</h4>
-                  <p className="text-[11px] text-white/50 leading-relaxed">Continuous daily departures on primary corridors.</p>
+                  <p className="text-[11px] text-white/50 leading-relaxed">Daily departures across primary corridors.</p>
                 </div>
                 <div className="border-l-2 border-secondary pl-4 py-1">
                   <h4 className="text-xs font-bold text-white uppercase font-label-caps tracking-wider mb-1">3PL Integration</h4>
-                  <p className="text-[11px] text-white/50 leading-relaxed">Seamless cross-dock and warehouse routing.</p>
+                  <p className="text-[11px] text-white/50 leading-relaxed">Direct flow between warehousing and linehaul.</p>
                 </div>
               </div>
 
@@ -590,7 +599,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                   Ready to optimize <br />your freight?
                 </h2>
                 <p className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed font-body-lg">
-                  Speak directly to our logistics engineers today. We build custom lane structures and offer transparent pricing structures that help your business scale.
+                  Connect with our logistics team today for transparent pricing and tailored freight lanes designed to scale your business.
                 </p>
               </div>
               <div>

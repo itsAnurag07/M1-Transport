@@ -64,7 +64,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[85vh] min-h-[550px] md:min-h-[700px] overflow-hidden opacity-100 translate-y-0" id="hero">
+      <section className="relative h-screen min-h-[550px] md:min-h-[700px] overflow-hidden opacity-100 translate-y-0" id="hero">
         <div className="absolute inset-0">
           <video
             autoPlay
@@ -196,14 +196,14 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
           </div>
           <div className="md:col-span-7 relative h-[350px] sm:h-[450px] md:h-[600px] rounded-card overflow-hidden editorial-shadow mt-6 md:mt-0">
             <img alt="Fleet of trucks" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9BLe5GVZxhvvmYRycGH9K02xszdBDTrpPQTamy7IVeTXclyVpP8OKiRuOVyZvQNtvx4m1Le33_UF186qaK54W4sIV5DjjGc7f17hIFurzxcMh5q4R6UBtjjSmnPxh_hySLTKf2c0ltQ06glDg3vFYTNAIFB9qnzsHS1G3-JP5w-qvJqeRALGH8t7MXowuix-o8uFKnNsSkxdV9s2vHmrH_uKvJ-5ob_3TFVZETZkF40wkvlHYVDiPlW8l0ZKfu7BfaDuTBs9L4yk" />
-            <div className="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 flex flex-col gap-3 md:gap-4 z-10">
-              <div className="bg-secondary text-white p-4 md:p-6 flex items-center gap-4 md:gap-6 w-full md:w-80 shadow-2xl rounded-lg">
-                <span className="font-display-lg text-2xl md:text-4xl">01</span>
-                <span className="font-label-caps uppercase tracking-tighter leading-tight font-bold text-xs md:text-sm">Proven Expertise &amp; Heritage</span>
+            <div className="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 flex flex-row md:flex-col gap-2 md:gap-4 z-10">
+              <div className="bg-secondary text-white p-2 px-3 md:p-6 flex items-center gap-2 md:gap-6 rounded-full md:rounded-lg shadow-2xl w-auto md:w-80">
+                <span className="font-display-lg text-sm md:text-4xl font-bold">01</span>
+                <span className="font-label-caps uppercase tracking-tighter leading-tight font-bold text-[8px] md:text-sm">Proven Expertise</span>
               </div>
-              <div className="bg-surface text-primary p-4 md:p-6 flex items-center gap-4 md:gap-6 w-full md:w-80 shadow-2xl border border-outline-variant rounded-lg">
-                <span className="font-display-lg text-2xl md:text-4xl">02</span>
-                <span className="font-label-caps uppercase tracking-tighter leading-tight font-bold text-xs md:text-sm">Cost-Saving Consolidation</span>
+              <div className="bg-surface text-primary p-2 px-3 md:p-6 flex items-center gap-2 md:gap-6 rounded-full md:rounded-lg shadow-2xl border border-outline-variant w-auto md:w-80">
+                <span className="font-display-lg text-sm md:text-4xl font-bold">02</span>
+                <span className="font-label-caps uppercase tracking-tighter leading-tight font-bold text-[8px] md:text-sm">Cost-Saving</span>
               </div>
             </div>
           </div>
@@ -306,7 +306,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       {/* Dark Feature Section (Value Props) */}
       <section className="py-16 md:py-24 px-4 md:px-6 text-white overflow-hidden relative opacity-100 translate-y-0 bg-black">
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-20">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-16 md:mb-20">
             <div>
               <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 md:mb-8">
                 <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span> Why M1?
@@ -317,7 +317,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
               <img
                 src={logo}
                 alt="M1 Transport Logo"
-                className="w-48 h-48 md:w-80 md:h-80 object-contain opacity-90"
+                className="w-36 h-36 md:w-80 md:h-80 object-contain opacity-90"
                 style={{ filter: 'drop-shadow(0 0 40px rgba(220,38,38,0.35)) drop-shadow(0 0 80px rgba(220,38,38,0.15))' }}
               />
             </div>

@@ -97,18 +97,32 @@
 
 /* Custom Navbar Height Configuration */
 .navbar-custom {
-  height: 3.8rem !important;
-  /* 64px - Change this value to adjust closed height */
+  height: 3.0rem !important;
+  /* Reduced slightly for mobile view */
 }
 
 /* Branding logo container height matching the navbar */
 .navbar-logo-bar {
-  height: 4rem !important;
-  /* matches navbar height */
+  height: 3.0rem !important;
+  /* Reduced slightly for mobile view */
 }
 
 /* Scale the logo image to fit nicely within the height */
 .navbar-logo {
-  height: 3.3rem !important;
-  /* 40px - Change this value to adjust the logo size */
+  height: 2.3rem !important;
+  /* Scaled down slightly for mobile view */
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    height: 3.8rem !important;
+  }
+
+  .navbar-logo-bar {
+    height: 4rem !important;
+  }
+
+  .navbar-logo {
+    height: 3.1rem !important;
+  }
 }
