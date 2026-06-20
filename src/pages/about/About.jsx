@@ -68,7 +68,7 @@ function About({ navigateToHomeAndScroll }) {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto w-full px-4 md:px-6 text-white pt-20">
+        <div className="relative max-w-7xl mx-auto w-full px-4 md:px-6 text-white pt-6 md:pt-20 hero-text-container">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             About M1 Transport
@@ -78,7 +78,7 @@ function About({ navigateToHomeAndScroll }) {
             <span className="text-secondary text-outline">A Future of Intelligence.</span>
           </h1>
           <p className="text-base md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
-            For over 15 years, we have connected Australian businesses with smart, reliable, and transparent supply chain operations.
+            Connecting Australian businesses with smart, transparent supply chain operations for over 15 years.
           </p>
         </div>
       </section>

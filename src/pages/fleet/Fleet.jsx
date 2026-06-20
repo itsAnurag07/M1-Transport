@@ -19,7 +19,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
       maxPayload: '42,000 kg',
       axles: 'Lead Semi (Dual/Tri) + Tail Semi (Tri-Axle)',
       features: ['NHVR HML approved', 'EBS braking controls', 'Real-time satellite GPS tracking', 'Fatigue monitoring camera systems'],
-      description: 'Our B-Double combinations operate primarily on capital-to-capital linehaul corridors (Sydney, Melbourne, Brisbane, Adelaide, Perth). They offer massive cargo capacity and excellent payload efficiency, reducing the overall carbon footprint per pallet moved.'
+      description: 'Our B-Double combinations connect national capital hubs, offering massive cargo capacity and maximum payload efficiency.'
     },
     semi: {
       name: 'Single Semi-Trailer (Dry Van / Open)',
@@ -29,7 +29,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
       maxPayload: '24,000 kg',
       axles: 'Tri-Axle Trailer suspension',
       features: ['Air-ride suspension', 'Rear barn doors & roll-up doors', 'Curtainside fast-lock buckles', 'Route telemetry sensors'],
-      description: 'The single semi-trailer is the industry standard for regional distribution and metropolitan point-to-point deliveries. Highly maneuverable while maintaining substantial payload capability, our semis are equipped with air-ride systems to protect delicate freight.'
+      description: 'The single semi-trailer is our standard for regional distribution and metropolitan point-to-point deliveries.'
     },
     refrigerated: {
       name: 'Refrigerated Semi-Trailer (Chilled / Frozen)',
@@ -39,7 +39,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
       maxPayload: '22,000 kg',
       axles: 'Tri-Axle Thermal Trailer',
       features: ['Carrier Vector active units', 'Multi-temp zone partitioning', 'Real-time digital temp logs', 'HACCP food safety certification'],
-      description: 'Designed specifically for cold chain integrity, our refrigerated trailer fleet maintains constant temperatures from -20°C to +20°C. Complete with thermal barrier walls and real-time electronic temperature alarms, it ensures fresh food and sensitive pharmaceuticals arrive compliant.'
+      description: 'Outfitted with active refrigeration units maintaining constant temperatures from -20°C to +20°C for sensitive freight.'
     },
     rigid: {
       name: 'Rigid Heavy Delivery Vehicle',
@@ -49,7 +49,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
       maxPayload: '8,500 kg',
       axles: 'Single Axle / Dual Rear suspension',
       features: ['2.0 Tonne heavy tail-lift', 'Roller shutter rear door', 'Low-clearance urban styling', 'Reversing cameras & side sensors'],
-      description: 'Our rigid fleet bridges metropolitan cross-docks and business delivery points. Outfitted with heavy-duty automated hydraulic tail-lifts, these vehicles are optimized for delivery sites that lack dock infrastructure or forklifts.'
+      description: 'Our rigid fleet is equipped with hydraulic tail-lifts, optimized for urban deliveries lacking dock infrastructure.'
     }
   };
 
@@ -98,7 +98,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
+        <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-6 md:pt-20 hero-text-container">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             Asset Operations
@@ -110,7 +110,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
             <span className="text-secondary text-outline">FLEET.</span>
           </h1>
           <p className="text-base md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
-            Fully company-owned assets, operated by qualified drivers and maintained to standard compliance. Moving Australia daily.
+            Fully company-owned fleet, qualified drivers, and certified compliance. Moving Australia daily.
           </p>
         </div>
       </section>
@@ -126,7 +126,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
               Our Fleet Specifications
             </h2>
           </div>
-          <div className="lg:col-span-6 border-l-2 border-secondary pl-8 py-1">
+          <div className="lg:col-span-6 border-l-2 border-secondary pl-8 py-1 hidden sm:block">
             <p className="font-body-md text-on-surface-variant leading-relaxed text-base">
               We own and manage our assets, ensuring absolute control over vehicle compliance, service schedules, and driver standards.
             </p>

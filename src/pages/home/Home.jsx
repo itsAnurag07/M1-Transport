@@ -74,11 +74,11 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             className="w-full h-full object-cover grayscale-[0.2] contrast-110"
             src={heroVideo}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto h-full px-4 md:px-6 flex flex-col justify-center pt-20">
+        <div className="relative max-w-7xl mx-auto h-full px-4 md:px-6 flex flex-col justify-center pt-20 -translate-y-10 md:translate-y-0 hero-text-container">
           <div className="max-w-4xl text-white space-y-6 md:space-y-8">
-            <h1 className="hero-title font-bold text-white font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
+            <h1 className="hero-title font-bold text-white font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl space-y-2 md:space-y-0">
               <span className="block">Lower cost. </span>
               <span className="block text-secondary">More visibility. </span>
               <span className="block">Better freight. </span>
@@ -97,7 +97,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
                 <span className="w-3 h-3 bg-secondary rotate-45 mr-3"></span> 3PL Logistics
               </div>
             </div>
-            <div className="pt-2 md:pt-4">
+            <div className="pt-6 md:pt-8">
               <button onClick={() => navigateToHomeAndScroll('services')} className="bg-secondary text-white px-6 py-3.5 md:px-10 md:py-5 rounded-button font-label-caps uppercase tracking-widest flex items-center group transition-all hover:bg-[#BD1C19] hover:pr-12 border-none outline-none cursor-pointer text-sm">
                 Our services
                 <span className="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
@@ -133,12 +133,12 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             {/* Card 1 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[380px] md:h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
               <img alt="Australian East Coast" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide1} />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/75 via-[#0c1017]/50 to-[#0c1017]/5 transition-opacity duration-500 group-hover:opacity-75"></div>
-              <div className="relative h-full flex flex-col justify-end p-6 md:p-8 z-10">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/50 via-[#0c1017]/25 to-transparent transition-opacity duration-500 group-hover:opacity-60"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 pb-3 md:px-8 md:pb-5 md:pt-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>
                   <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight mb-1">Australian East Coast</h3>
                   <div className="w-12 h-[2px] bg-secondary my-3"></div>
-                  <p className="text-white/90 text-xs md:text-sm leading-relaxed mb-2">
+                  <p className="text-white/90 text-xs md:text-sm leading-relaxed mb-0">
                     Daily scheduled corridor linehaul and freight consolidation connecting capital hubs.
                   </p>
                 </div>
@@ -148,12 +148,12 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             {/* Card 2 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[380px] md:h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
               <img alt="Bulk Haulage" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide2} />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/75 via-[#0c1017]/50 to-[#0c1017]/5 transition-opacity duration-500 group-hover:opacity-75"></div>
-              <div className="relative h-full flex flex-col justify-end p-6 md:p-8 z-10">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/50 via-[#0c1017]/25 to-transparent transition-opacity duration-500 group-hover:opacity-60"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 pb-3 md:px-8 md:pb-5 md:pt-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>
                   <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight mb-1">Bulk Haulage</h3>
                   <div className="w-12 h-[2px] bg-secondary my-3"></div>
-                  <p className="text-white/90 text-xs md:text-sm leading-relaxed mb-2">
+                  <p className="text-white/90 text-xs md:text-sm leading-relaxed mb-0">
                     Heavy industrial freight logistics and high-payload fleet combinations.
                   </p>
                 </div>
@@ -163,12 +163,12 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             {/* Card 3 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[380px] md:h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
               <img alt="Third Party Logistics - 3PL" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide3} />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/75 via-[#0c1017]/50 to-[#0c1017]/5 transition-opacity duration-500 group-hover:opacity-75"></div>
-              <div className="relative h-full flex flex-col justify-end p-6 md:p-8 z-10">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/50 via-[#0c1017]/25 to-transparent transition-opacity duration-500 group-hover:opacity-60"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 pb-3 md:px-8 md:pb-5 md:pt-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>
                   <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight mb-1">Third Party Logistics - 3PL</h3>
                   <div className="w-12 h-[2px] bg-secondary my-3"></div>
-                  <p className="text-white/90 text-xs md:text-sm leading-relaxed mb-2">
+                  <p className="text-white/90 text-xs md:text-sm leading-relaxed mb-0">
                     WMS-integrated warehousing, container devanning, and regional storage.
                   </p>
                 </div>
@@ -181,7 +181,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       {/* About / Fleet Section */}
       <section id="fleet" className="py-12 md:py-[100px] px-4 md:px-6 w-full max-w-7xl mx-auto opacity-100 translate-y-0">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-grid-gutter items-center">
-          <div className="md:col-span-5 space-y-4 md:space-y-0">
+          <div className="md:col-span-5 flex flex-col items-start">
             <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-4 md:mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span> About M1
             </span>
@@ -189,7 +189,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             <p className="font-body-lg text-on-surface-variant mb-6 md:mb-12 leading-relaxed text-sm md:text-base">
               We bring 15+ years of operational experience to every shipment—combining operational mastery with modern tech-enabled routing to keep your supply chain moving with surgical precision.
             </p>
-            <button onClick={() => navigateTo('about')} className="group flex items-center gap-4 border border-primary text-primary px-6 py-3.5 md:px-8 md:py-4 font-label-caps uppercase tracking-widest rounded-button hover:bg-primary hover:text-white transition-all bg-transparent cursor-pointer text-xs md:text-sm">
+            <button onClick={() => navigateTo('about')} className="group flex items-center mt-8 md:mt-12 gap-4 border border-primary text-primary px-6 py-3.5 md:px-8 md:py-4 font-label-caps uppercase tracking-widest rounded-button hover:bg-primary hover:text-white transition-all bg-transparent cursor-pointer text-xs md:text-sm">
               About the company
               <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">north_east</span>
             </button>
@@ -197,11 +197,11 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
           <div className="md:col-span-7 relative h-[350px] sm:h-[450px] md:h-[600px] rounded-card overflow-hidden editorial-shadow mt-6 md:mt-0">
             <img alt="Fleet of trucks" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9BLe5GVZxhvvmYRycGH9K02xszdBDTrpPQTamy7IVeTXclyVpP8OKiRuOVyZvQNtvx4m1Le33_UF186qaK54W4sIV5DjjGc7f17hIFurzxcMh5q4R6UBtjjSmnPxh_hySLTKf2c0ltQ06glDg3vFYTNAIFB9qnzsHS1G3-JP5w-qvJqeRALGH8t7MXowuix-o8uFKnNsSkxdV9s2vHmrH_uKvJ-5ob_3TFVZETZkF40wkvlHYVDiPlW8l0ZKfu7BfaDuTBs9L4yk" />
             <div className="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 flex flex-row md:flex-col gap-2 md:gap-4 z-10">
-              <div className="bg-secondary text-white p-2 px-3 md:p-6 flex items-center gap-2 md:gap-6 rounded-full md:rounded-lg shadow-2xl w-auto md:w-80">
+              <div className="bg-secondary text-white p-2 px-3 md:py-4 md:px-6 flex items-center gap-2 md:gap-4 rounded-button shadow-2xl w-auto md:w-64">
                 <span className="font-display-lg text-sm md:text-4xl font-bold">01</span>
                 <span className="font-label-caps uppercase tracking-tighter leading-tight font-bold text-[8px] md:text-sm">Proven Expertise</span>
               </div>
-              <div className="bg-surface text-primary p-2 px-3 md:p-6 flex items-center gap-2 md:gap-6 rounded-full md:rounded-lg shadow-2xl border border-outline-variant w-auto md:w-80">
+              <div className="bg-surface text-primary p-2 px-3 md:py-4 md:px-6 flex items-center gap-2 md:gap-4 rounded-button shadow-2xl border border-outline-variant w-auto md:w-64">
                 <span className="font-display-lg text-sm md:text-4xl font-bold">02</span>
                 <span className="font-label-caps uppercase tracking-tighter leading-tight font-bold text-[8px] md:text-sm">Cost-Saving</span>
               </div>
@@ -211,7 +211,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
       </section>
 
       {/* Services List Section */}
-      <section className="py-12 md:py-[100px] px-4 md:px-6 bg-surface-container-low opacity-100 translate-y-0">
+      <section className="pt-10 pb-12 md:pt-[60px] md:pb-[100px] px-4 md:px-6 bg-surface-container-low opacity-100 translate-y-0">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline border-b border-outline/30 pb-8 md:pb-12 mb-8 md:mb-12 gap-4">
             <h2 className="font-display-lg text-4xl md:text-display-lg text-primary">Services.</h2>
@@ -220,21 +220,21 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             </p>
           </div>
           <div className="space-y-0 text-primary">
-            <div className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
+            <div onClick={() => navigateTo('services')} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer">
               <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Australian East Coast</h4>
-              <button onClick={() => navigateTo('services')} className="flex items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
+              <button onClick={() => navigateTo('services')} className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
               </button>
             </div>
-            <div className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
+            <div onClick={() => navigateTo('services')} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer">
               <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Bulk Haulage</h4>
-              <button onClick={() => navigateTo('services')} className="flex items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
+              <button onClick={() => navigateTo('services')} className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
               </button>
             </div>
-            <div className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4">
+            <div onClick={() => navigateTo('services')} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer">
               <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Third Party Logistics - 3PL</h4>
-              <button onClick={() => navigateTo('services')} className="flex items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
+              <button onClick={() => navigateTo('services')} className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
               </button>
             </div>

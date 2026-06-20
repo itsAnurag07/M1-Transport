@@ -85,7 +85,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto w-full px-4 sm:px-6 text-white pt-20">
+        <div className="relative max-w-7xl mx-auto w-full px-4 sm:px-6 text-white pt-6 md:pt-20 hero-text-container">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             Operational Infrastructure
@@ -95,7 +95,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
             <span className="text-secondary text-outline">ENGINEERED FOR PRECISION.</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl font-light text-white/85 max-w-2xl leading-relaxed">
-            High-velocity freight, reliable linehaul corridors, and smart logistics solutions tailored for Australian businesses.
+            High-velocity freight, reliable linehaul corridors, and smart logistics solutions.
           </p>
         </div>
       </section>

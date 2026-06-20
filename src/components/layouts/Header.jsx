@@ -1,16 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logoImg from '../../assets/images/navbar_logo.png';
 
 function Header({ currentPage, navigateTo, navigateToHomeAndScroll, isScrolled }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add('mobile-menu-active');
+    } else {
+      document.body.classList.remove('mobile-menu-active');
+    }
+    return () => {
+      document.body.classList.remove('mobile-menu-active');
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <header className="fixed top-4 md:top-6 left-0 right-0 z-50 px-3 md:px-6">
-      <nav className={`max-w-7xl mx-auto bg-white/95 backdrop-blur-md rounded-button px-4 md:px-8 transition-all duration-300 ${isMobileMenuOpen ? 'h-auto py-3' : 'navbar-custom'} md:navbar-custom flex flex-col md:flex-row md:items-center justify-between border border-outline-variant/20 ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
+        <nav className={`max-w-7xl mx-auto bg-white/95 backdrop-blur-md rounded-button px-4 md:px-8 transition-all duration-300 ${isMobileMenuOpen ? 'h-auto py-3' : 'navbar-custom'} md:navbar-custom flex flex-col md:flex-row md:items-center justify-between border border-outline-variant/20 ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
         <div className="flex items-center justify-between w-full md:w-auto navbar-logo-bar">
           <div className="flex items-center gap-2 md:gap-3 cursor-pointer h-full" onClick={() => { navigateTo('home'); setIsMobileMenuOpen(false); }}>
             <img src={logoImg} alt="M1 Transport Logo" className="navbar-logo w-auto object-contain" />
-            <span className="text-base sm:text-lg md:text-xl lg:text-xl font-extrabold italic tracking-tighter text-primary">M1 TRANSPORT</span>
+            <span className="text-lg md:text-xl font-extrabold italic tracking-tighter text-primary">M1 TRANSPORT</span>
           </div>
 
           <button

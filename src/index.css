@@ -97,19 +97,19 @@
 
 /* Custom Navbar Height Configuration */
 .navbar-custom {
-  height: 3.0rem !important;
+  height: 3.5rem !important;
   /* Reduced slightly for mobile view */
 }
 
 /* Branding logo container height matching the navbar */
 .navbar-logo-bar {
-  height: 3.0rem !important;
+  height: 3.5rem !important;
   /* Reduced slightly for mobile view */
 }
 
 /* Scale the logo image to fit nicely within the height */
 .navbar-logo {
-  height: 2.3rem !important;
+  height: 2.7rem !important;
   /* Scaled down slightly for mobile view */
 }
 
@@ -125,4 +125,12 @@
   .navbar-logo {
     height: 3.1rem !important;
   }
+}
+
+.hero-text-container {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.mobile-menu-active .hero-text-container {
+  transform: translateY(110px);
 }

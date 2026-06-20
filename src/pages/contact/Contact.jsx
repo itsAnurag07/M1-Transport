@@ -40,7 +40,7 @@ function Contact({ navigateTo }) {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-20">
+        <div className="relative max-w-7xl mx-auto w-full px-6 text-white pt-6 md:pt-20">
           <span className="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary text-[10px] font-bold mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             Get in Touch
@@ -51,7 +51,7 @@ function Contact({ navigateTo }) {
             <span className="text-secondary text-outline">forward.</span>
           </h1>
           <p className="text-base md:text-lg font-light text-white/85 max-w-2xl leading-relaxed">
-            Whether you need a quote, have a question, or want to explore a logistics partnership — our team is ready.
+            Whether you need a quote or want to explore a logistics partnership, our team is ready.
           </p>
         </div>
       </section>
