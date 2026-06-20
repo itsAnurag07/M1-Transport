@@ -266,13 +266,14 @@ function About({ navigateToHomeAndScroll }) {
               </div>
 
               <div className="pt-3">
-                <button
-                  onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-black px-6 py-3 sm:px-8 sm:py-3.5 font-black text-sm sm:text-base italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button"
+                <a
+                  href="/contact"
+                  onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('contact'); }}
+                  className="bg-white text-black px-6 py-3 sm:px-8 sm:py-3.5 font-black text-sm sm:text-base italic uppercase tracking-tighter hover:bg-secondary hover:text-white transition-all flex items-center gap-4 cursor-pointer border-none outline-none rounded-button no-underline inline-flex"
                 >
                   Get started today
                   <span className="material-symbols-outlined font-black">arrow_forward</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -349,13 +350,14 @@ function About({ navigateToHomeAndScroll }) {
                 <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-md mb-8 leading-relaxed font-body-lg">
                   Get smarter freight consolidation, faster transit times, and dedicated end-to-end support. Let's move your business forward.
                 </p>
-                <button
-                  onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-secondary px-6 py-3 text-base md:px-8 md:py-4 md:text-xl font-bold italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button"
+                <a
+                  href="/contact"
+                  onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('contact'); }}
+                  className="bg-white text-secondary px-6 py-3 text-base md:px-8 md:py-4 md:text-xl font-bold italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button no-underline inline-flex justify-center"
                 >
                   Request a Quote
                   <span className="material-symbols-outlined font-black text-xl md:text-2xl">rocket_launch</span>
-                </button>
+                </a>
               </div>
               <div className="hidden lg:block relative h-full">
                 <div className="absolute inset-0 flex items-center justify-center">

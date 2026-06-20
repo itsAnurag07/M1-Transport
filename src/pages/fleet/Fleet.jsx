@@ -259,13 +259,14 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
                 </p>
               </div>
               <div>
-                <button
-                  onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-secondary px-8 py-4 font-bold text-lg md:text-xl italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button"
+                <a
+                  href="/contact"
+                  onClick={(e) => { e.preventDefault(); navigateTo('contact'); }}
+                  className="bg-white text-secondary px-8 py-4 font-bold text-lg md:text-xl italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button no-underline inline-flex justify-center"
                 >
                   Acquire Capacity
                   <span className="material-symbols-outlined font-black text-2xl">rocket_launch</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>

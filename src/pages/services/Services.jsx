@@ -279,13 +279,14 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                 </div>
               </div>
 
-              <button
-                onClick={() => navigateTo('about')}
-                className="group flex items-center gap-4 border border-white/30 text-white px-8 py-3.5 font-label-caps uppercase tracking-widest rounded-button hover:bg-white hover:text-black transition-all bg-transparent cursor-pointer text-sm"
+              <a
+                href="/about"
+                onClick={(e) => { e.preventDefault(); navigateTo('about'); }}
+                className="group flex items-center gap-4 border border-white/30 text-white px-8 py-3.5 font-label-caps uppercase tracking-widest rounded-button hover:bg-white hover:text-black transition-all bg-transparent cursor-pointer text-sm no-underline inline-flex justify-center"
               >
                 About us
                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-1 text-sm font-black">arrow_forward</span>
-              </button>
+              </a>
             </div>
 
             {/* Right Column: Map SVG */}
@@ -603,13 +604,14 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
                 </p>
               </div>
               <div>
-                <button
-                  onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-white text-secondary px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg md:text-xl font-bold italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button"
+                <a
+                  href="/contact"
+                  onClick={(e) => { e.preventDefault(); navigateTo('contact'); }}
+                  className="bg-white text-secondary px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg md:text-xl font-bold italic uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-4 shadow-xl border-none outline-none cursor-pointer rounded-button no-underline inline-flex justify-center"
                 >
                   Consult an Expert
                   <span className="material-symbols-outlined font-black text-xl md:text-2xl">rocket_launch</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>

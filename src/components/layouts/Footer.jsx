@@ -19,11 +19,11 @@ function Footer({ navigateTo, navigateToHomeAndScroll }) {
         <div className="col-span-6 md:col-span-2">
           <h5 className="font-label-caps uppercase text-primary mb-8 tracking-widest font-bold">Company</h5>
           <ul className="space-y-4 font-body-md text-on-surface-variant list-none pl-0">
-            <li className=""><button onClick={() => navigateTo('about')} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer">About Us</button></li>
-            <li className=""><button onClick={() => navigateTo('services')} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer">Our Services</button></li>
-            <li className=""><button onClick={() => navigateTo('fleet')} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer">Our Fleet</button></li>
+            <li className=""><a href="/about" onClick={(e) => { e.preventDefault(); navigateTo('about'); }} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer no-underline block">About Us</a></li>
+            <li className=""><a href="/services" onClick={(e) => { e.preventDefault(); navigateTo('services'); }} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer no-underline block">Our Services</a></li>
+            <li className=""><a href="/fleet" onClick={(e) => { e.preventDefault(); navigateTo('fleet'); }} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer no-underline block">Our Fleet</a></li>
 
-            <li className=""><button onClick={() => navigateToHomeAndScroll('contact')} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer">Contact</button></li>
+            <li className=""><a href="/contact" onClick={(e) => { e.preventDefault(); navigateTo('contact'); }} className="hover:text-secondary transition-colors text-left font-body-md text-on-surface-variant bg-transparent border-none outline-none cursor-pointer no-underline block">Contact</a></li>
           </ul>
         </div>
         <div className="col-span-6 md:col-span-2">

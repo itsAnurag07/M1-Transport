@@ -9,12 +9,27 @@ import Contact from './pages/contact/Contact';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [currentPage, setCurrentPage] = useState('home');
+
+  const getInitialPage = () => {
+    const path = window.location.pathname.replace(/^\/|\/$/g, '');
+    const validPages = ['services', 'about', 'safety', 'fleet', 'contact'];
+    return validPages.includes(path) ? path : 'home';
+  };
+
+  const [currentPage, setCurrentPage] = useState(getInitialPage);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPage(getInitialPage());
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   useEffect(() => {
     const seoMeta = {
       home: {
-        title: "M1 TRANSPORT | National Logistics, Trucking & Freight Australia",
+        title: "M1 TRANSPORT | Logistics, Trucking & Freight Australia",
         description: "M1 Transport is a premier Australian freight & logistics company. We specialize in B-Double linehaul, bulk haulage, 3PL warehousing, and refrigerated transport."
       },
       services: {
@@ -71,12 +86,20 @@ function App() {
 
   const navigateTo = (page) => {
     setCurrentPage(page);
+    const newPath = page === 'home' ? '/' : `/${page}`;
+    if (window.location.pathname !== newPath) {
+      window.history.pushState(null, '', newPath);
+    }
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   const navigateToHomeAndScroll = (sectionId) => {
     if (currentPage !== 'home') {
       setCurrentPage('home');
+      const newPath = '/';
+      if (window.location.pathname !== newPath) {
+        window.history.pushState(null, '', newPath);
+      }
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {

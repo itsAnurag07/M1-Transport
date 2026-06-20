@@ -98,10 +98,10 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
               </div>
             </div>
             <div className="pt-6 md:pt-8">
-              <button onClick={() => navigateToHomeAndScroll('services')} className="bg-secondary text-white px-6 py-3.5 md:px-10 md:py-5 rounded-button font-label-caps uppercase tracking-widest flex items-center group transition-all hover:bg-[#BD1C19] hover:pr-12 border-none outline-none cursor-pointer text-sm">
+              <a href="/#services" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('services'); }} className="bg-secondary text-white px-6 py-3.5 md:px-10 md:py-5 rounded-button font-label-caps uppercase tracking-widest flex items-center group transition-all hover:bg-[#BD1C19] hover:pr-12 border-none outline-none cursor-pointer text-sm no-underline inline-flex">
                 Our services
                 <span className="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -189,10 +189,10 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             <p className="font-body-lg text-on-surface-variant mb-6 md:mb-12 leading-relaxed text-sm md:text-base">
               We bring 15+ years of operational experience to every shipment—combining operational mastery with modern tech-enabled routing to keep your supply chain moving with surgical precision.
             </p>
-            <button onClick={() => navigateTo('about')} className="group flex items-center mt-8 md:mt-12 gap-4 border border-primary text-primary px-6 py-3.5 md:px-8 md:py-4 font-label-caps uppercase tracking-widest rounded-button hover:bg-primary hover:text-white transition-all bg-transparent cursor-pointer text-xs md:text-sm">
+            <a href="/about" onClick={(e) => { e.preventDefault(); navigateTo('about'); }} className="group flex items-center mt-8 md:mt-12 gap-4 border border-primary text-primary px-6 py-3.5 md:px-8 md:py-4 font-label-caps uppercase tracking-widest rounded-button hover:bg-primary hover:text-white transition-all bg-transparent cursor-pointer text-xs md:text-sm no-underline inline-flex">
               About the company
               <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">north_east</span>
-            </button>
+            </a>
           </div>
           <div className="md:col-span-7 relative h-[350px] sm:h-[450px] md:h-[600px] rounded-card overflow-hidden editorial-shadow mt-6 md:mt-0">
             <img alt="Fleet of trucks" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9BLe5GVZxhvvmYRycGH9K02xszdBDTrpPQTamy7IVeTXclyVpP8OKiRuOVyZvQNtvx4m1Le33_UF186qaK54W4sIV5DjjGc7f17hIFurzxcMh5q4R6UBtjjSmnPxh_hySLTKf2c0ltQ06glDg3vFYTNAIFB9qnzsHS1G3-JP5w-qvJqeRALGH8t7MXowuix-o8uFKnNsSkxdV9s2vHmrH_uKvJ-5ob_3TFVZETZkF40wkvlHYVDiPlW8l0ZKfu7BfaDuTBs9L4yk" />
@@ -220,24 +220,24 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
             </p>
           </div>
           <div className="space-y-0 text-primary">
-            <div onClick={() => navigateTo('services')} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer">
-              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Australian East Coast</h4>
-              <button onClick={() => navigateTo('services')} className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
+            <a href="/services" onClick={(e) => { e.preventDefault(); navigateTo('services'); }} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer no-underline block">
+              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic text-primary group-hover:text-white">Australian East Coast</h4>
+              <span className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold text-primary group-hover:text-white text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
-              </button>
-            </div>
-            <div onClick={() => navigateTo('services')} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer">
-              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Bulk Haulage</h4>
-              <button onClick={() => navigateTo('services')} className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
+              </span>
+            </a>
+            <a href="/services" onClick={(e) => { e.preventDefault(); navigateTo('services'); }} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer no-underline block">
+              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic text-primary group-hover:text-white">Bulk Haulage</h4>
+              <span className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold text-primary group-hover:text-white text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
-              </button>
-            </div>
-            <div onClick={() => navigateTo('services')} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer">
-              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic">Third Party Logistics - 3PL</h4>
-              <button onClick={() => navigateTo('services')} className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold bg-transparent border-none outline-none text-primary group-hover:text-white cursor-pointer text-xs md:text-sm">
+              </span>
+            </a>
+            <a href="/services" onClick={(e) => { e.preventDefault(); navigateTo('services'); }} className="group flex flex-col md:flex-row justify-between items-start md:items-center py-8 md:py-12 border-b border-outline/20 hover:bg-secondary hover:text-white transition-colors px-4 md:px-6 -mx-4 md:-mx-6 gap-4 cursor-pointer no-underline block">
+              <h4 className="font-headline-lg text-xl md:text-headline-lg text-left group-hover:translate-x-4 transition-transform uppercase font-bold italic text-primary group-hover:text-white">Third Party Logistics - 3PL</h4>
+              <span className="w-full md:w-auto flex justify-between md:justify-start items-center gap-4 font-label-caps uppercase tracking-widest mt-2 md:mt-0 opacity-60 md:opacity-40 group-hover:opacity-100 transition-opacity font-bold text-primary group-hover:text-white text-xs md:text-sm">
                 Learn more <span className="material-symbols-outlined">north_east</span>
-              </button>
-            </div>
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -348,9 +348,9 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
           <div className="p-8 sm:p-12 md:p-20 md:w-1/2 flex flex-col justify-center">
             <h2 className="font-display-lg text-3xl md:text-display-lg mb-6 md:mb-8 leading-tight text-primary">Partner with <br /><span className="text-secondary italic font-bold">M1 Transport</span> today.</h2>
             <p className="font-body-lg text-on-surface-variant mb-8 md:mb-12 text-sm md:text-base leading-relaxed">Smarter consolidation. Faster freight. End-to-end support from first mile to final mile across the continent.</p>
-            <button onClick={() => navigateToHomeAndScroll('contact')} className="cta-gradient w-full md:w-fit px-8 py-4 md:px-12 md:py-6 rounded-button font-label-caps uppercase tracking-widest text-white hover:opacity-90 transition-all flex items-center justify-center gap-4 group border-none outline-none cursor-pointer text-sm font-bold">
+            <a href="/contact" onClick={(e) => { e.preventDefault(); navigateTo('contact'); }} className="cta-gradient w-full md:w-fit px-8 py-4 md:px-12 md:py-6 rounded-button font-label-caps uppercase tracking-widest text-white hover:opacity-90 transition-all flex items-center justify-center gap-4 group border-none outline-none cursor-pointer text-sm font-bold no-underline inline-flex">
               Get a quote <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
-            </button>
+            </a>
           </div>
           <div className="md:w-1/2 flex items-center justify-center relative min-h-[300px] md:min-h-[400px] bg-black p-6">
             <div className="text-white font-display-xl text-[100px] md:text-[180px] font-bold tracking-tighter opacity-10 absolute select-none">M1</div>

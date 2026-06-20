@@ -340,13 +340,14 @@ function Safety({ navigateTo, navigateToHomeAndScroll }) {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-                <button
-                  onClick={() => navigateToHomeAndScroll('contact')}
-                  className="bg-secondary text-white px-6 py-3.5 sm:px-10 sm:py-4 text-base sm:text-lg font-black italic uppercase tracking-tighter hover:bg-[#BD1C19] transition-all flex items-center justify-center gap-3 cursor-pointer border-none outline-none rounded-button"
+                <a
+                  href="/contact"
+                  onClick={(e) => { e.preventDefault(); navigateTo('contact'); }}
+                  className="bg-secondary text-white px-6 py-3.5 sm:px-10 sm:py-4 text-base sm:text-lg font-black italic uppercase tracking-tighter hover:bg-[#BD1C19] transition-all flex items-center justify-center gap-3 cursor-pointer border-none outline-none rounded-button no-underline inline-flex"
                 >
                   Talk to our safety team
                   <span className="material-symbols-outlined">arrow_forward</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
