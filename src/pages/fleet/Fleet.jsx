@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import M1_truck1 from '../../assets/images/M1_truck.png';
+import M1_truck2 from '../../assets/images/M1_truck2.png';
 
 function Fleet({ navigateTo, navigateToHomeAndScroll }) {
   // Showroom Tab State
@@ -14,7 +16,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
     bdouble: {
       name: 'B-Double Multi-Combination',
       subtitle: 'The heavy linehaul workhorse of national corridors.',
-      image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800',
+      image: M1_truck2,
       palletSpots: '34 Standard Spaces (Double deck options available)',
       maxPayload: '42,000 kg',
       axles: 'Lead Semi (Dual/Tri) + Tail Semi (Tri-Axle)',
@@ -24,7 +26,7 @@ function Fleet({ navigateTo, navigateToHomeAndScroll }) {
     semi: {
       name: 'Single Semi-Trailer (Dry Van / Open)',
       subtitle: 'Flexible cargo transport for regional & metro shipments.',
-      image: 'https://images.unsplash.com/photo-1501522308591-dfcbfd2f620c?auto=format&fit=crop&q=80&w=800',
+      image: M1_truck1,
       palletSpots: '22 to 26 Standard Spaces',
       maxPayload: '24,000 kg',
       axles: 'Tri-Axle Trailer suspension',

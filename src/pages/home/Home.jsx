@@ -51,9 +51,9 @@ function Counter({ end, duration = 2000, decimals = 0, suffix = '', prefix = '' 
     </span>
   );
 }
-import slide1 from '../../assets/images/hero-slide-1.png';
+import servicesA from '../../assets/images/servicesA.png';
 import slide2 from '../../assets/images/hero-slide-2.png';
-import slide3 from '../../assets/images/hero-slide-3.png';
+import servicesB from '../../assets/images/servicesB.png';
 import truck2 from '../../assets/images/truck-1.png';
 import girlImage from '../../assets/images/girl.png';
 import heroVideo from '../../assets/Truck_Hero.mp4';
@@ -132,7 +132,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter">
             {/* Card 1 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[380px] md:h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
-              <img alt="Australian East Coast" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide1} />
+              <img alt="Australian East Coast" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={servicesA} />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/50 via-[#0c1017]/25 to-transparent transition-opacity duration-500 group-hover:opacity-60"></div>
               <div className="relative h-full flex flex-col justify-end p-6 pb-3 md:px-8 md:pb-5 md:pt-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>
@@ -162,7 +162,7 @@ function Home({ navigateTo, navigateToHomeAndScroll }) {
 
             {/* Card 3 */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[380px] md:h-[520px] group transition-all duration-500 hover:-translate-y-2 transform-gpu will-change-transform isolate" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}>
-              <img alt="Third Party Logistics - 3PL" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={slide3} />
+              <img alt="Third Party Logistics - 3PL" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 transform-gpu" src={servicesB} />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0c1017]/50 via-[#0c1017]/25 to-transparent transition-opacity duration-500 group-hover:opacity-60"></div>
               <div className="relative h-full flex flex-col justify-end p-6 pb-3 md:px-8 md:pb-5 md:pt-8 z-10">
                 <div style={{ textShadow: '0 2px 4px rgba(0,0,0,0.9)' }}>

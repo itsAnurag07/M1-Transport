@@ -53,6 +53,8 @@ function Counter({ end, duration = 2000, decimals = 0, suffix = '', prefix = '' 
 }
 
 
+import m1Truck from '../../assets/images/M1_truck.png';
+
 function About({ navigateToHomeAndScroll }) {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -154,7 +156,7 @@ function About({ navigateToHomeAndScroll }) {
                     alt="Precision in every move"
                     className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${activeTab === 0 ? 'opacity-100 scale-105 filter contrast-105' : 'opacity-0 scale-100'
                       }`}
-                    src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800"
+                    src={m1Truck}
                   />
                   {/* Image 2: Transparency */}
                   <img

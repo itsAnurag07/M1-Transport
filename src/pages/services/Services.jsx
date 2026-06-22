@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import slide1 from '../../assets/images/hero-slide-1.png';
+import servicesA from '../../assets/images/servicesA.png';
 import slide2 from '../../assets/images/hero-slide-2.png';
-import slide3 from '../../assets/images/hero-slide-3.png';
+import servicesB from '../../assets/images/servicesB.png';
 
 function Services({ navigateTo, navigateToHomeAndScroll }) {
   // Estimator State
@@ -147,7 +147,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
               <img
                 alt="Australian East Coast Freight"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src={slide1}
+                src={servicesA}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
@@ -225,7 +225,7 @@ function Services({ navigateTo, navigateToHomeAndScroll }) {
               <img
                 alt="Third Party Logistics 3PL"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src={slide3}
+                src={servicesB}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">

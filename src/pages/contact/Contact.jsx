@@ -17,7 +17,46 @@ function Contact({ navigateTo }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const serviceLabels = {
+      'east-coast': 'Australian East Coast Linehaul',
+      'bulk': 'Bulk Haulage',
+      '3pl': 'Third Party Logistics (3PL)',
+      'refrigerated': 'Refrigerated Transport',
+      'general': 'General Enquiry',
+    };
+
+    const selectedService = serviceLabels[formData.service] || 'General Enquiry';
+
+    const bodyText = `Hi M1 Transport team,
+
+I would like to request a quote / send an enquiry with the following details:
+
+- Full Name: ${formData.name}
+- Email: ${formData.email}
+- Phone: ${formData.phone || 'Not provided'}
+- Company: ${formData.company || 'Not provided'}
+- Service Required: ${selectedService}
+
+Message/Requirements:
+${formData.message}
+`;
+
+    const subject = `Website Enquiry - ${selectedService} - ${formData.name}`;
+    const mailtoUrl = `mailto:admin@m1transport.com.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+
+    // Redirect user to email client
+    window.location.href = mailtoUrl;
+
     setSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      company: '',
+      service: '',
+      message: '',
+    });
     setTimeout(() => setSubmitted(false), 4000);
   };
 
@@ -25,7 +64,7 @@ function Contact({ navigateTo }) {
     city: 'Melbourne',
     address: '2 Raymond Rd, Laverton North, 3026 Vic',
     phone: '0447219626',
-    email: 'info@m1transport.com.au',
+    email: 'admin@m1transport.com.au',
   };
 
   return (
@@ -205,7 +244,7 @@ function Contact({ navigateTo }) {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase tracking-wide mb-1">General Enquiries</h4>
-                  <p className="text-on-surface-variant text-sm font-body-md">enquiries@m1transport.com.au</p>
+                  <p className="text-on-surface-variant text-sm font-body-md">admin@m1transport.com.au</p>
                   <p className="text-on-surface-variant/60 text-xs font-body-md mt-0.5">We respond within 24 hours</p>
                 </div>
               </div>
