@@ -232,7 +232,9 @@ ${formData.message}
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase tracking-wide mb-1">National Dispatch</h4>
-                  <p className="text-on-surface-variant text-sm font-body-md">0447 219 626</p>
+                  <a href="tel:0447219626" className="text-on-surface-variant text-sm font-body-md hover:text-secondary transition-colors no-underline block">
+                    0447 219 626
+                  </a>
                   <p className="text-on-surface-variant/60 text-xs font-body-md mt-0.5">Mon–Fri: 6 AM – 10 PM AEST</p>
                 </div>
               </div>
@@ -244,7 +246,9 @@ ${formData.message}
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase tracking-wide mb-1">General Enquiries</h4>
-                  <p className="text-on-surface-variant text-sm font-body-md">admin@m1transport.com.au</p>
+                  <a href="mailto:admin@m1transport.com.au" className="text-on-surface-variant text-sm font-body-md hover:text-secondary transition-colors no-underline block">
+                    admin@m1transport.com.au
+                  </a>
                   <p className="text-on-surface-variant/60 text-xs font-body-md mt-0.5">We respond within 24 hours</p>
                 </div>
               </div>
@@ -314,11 +318,15 @@ ${formData.message}
               </div>
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-white/30 text-lg">call</span>
-                <span className="text-white/60 font-body-md">{office.phone}</span>
+                <a href={`tel:${office.phone}`} className="text-white/60 font-body-md hover:text-secondary transition-colors no-underline">
+                  {office.phone}
+                </a>
               </div>
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-white/30 text-lg">mail</span>
-                <span className="text-white/60 font-body-md">{office.email}</span>
+                <a href={`mailto:${office.email}`} className="text-white/60 font-body-md hover:text-secondary transition-colors no-underline">
+                  {office.email}
+                </a>
               </div>
             </div>
           </div>
